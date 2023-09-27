@@ -1,0 +1,39 @@
+Quartus Prime Archive log --	D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/mips.qarlog
+
+Archive:	D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/mips.qar
+Date:		Fri Jul 14 21:07:41 2023
+Quartus Prime		19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/BancodeRegistradores.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/Display1.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/Display2.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/Display3.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/Display4.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/MemoriaInstrucoesROM.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/MemoriadeDadosRAM.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/Out.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/PC.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/ULA.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/UnidadedeControle.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/UnidadedeControleULA.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/UnidadedeProcessamento.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/UnidadedeProcessamento.vwf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/Wave_IO.vwf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/WaveformBancoRegistradores.vwf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/WaveformBancoRegistradoresdois.vwf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/WaveformTeste.vwf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/WaveformULA.vwf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/assignment_defaults.qdf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/entrada.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/mips.qpf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/mips.qsf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/mips_assignment_defaults.qdf
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/muxalusrc.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/muxmemreg.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/muxregdst.v
+D:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/single_port_rom_init.txt
+	======= Total: 28 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

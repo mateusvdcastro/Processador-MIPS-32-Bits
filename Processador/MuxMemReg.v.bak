@@ -1,0 +1,19 @@
+module MuxRegReg(
+    input[31:0] Dado_ULA, Dado_Mem,
+    input controle,
+    output[31:0] Saida_MemReg
+);
+
+    reg [31:0] reg_auxiliar;
+    
+    always @(*) begin
+        if(controle) begin
+            reg_auxiliar = Dado_Mem;
+        end
+        else begin
+            reg_auxiliar = Dado_Ula;
+        end
+
+    end
+
+    assign reg_saida = reg_auxiliar;

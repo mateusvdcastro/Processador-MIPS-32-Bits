@@ -1,0 +1,50 @@
+module Entrada(
+	input clock,
+	output novo_clock,
+	input in,
+	input [15:0] interruptores,
+	output [15:0] resultado_entrada
+
+);
+
+	reg[27:0] out;
+	reg [15:0] resultado;
+	reg RegClock;
+	
+	integer contador = 0;
+
+	
+	always@(posedge clock) begin
+		if (contador == 0) begin
+			RegClock = 0;
+			contador = 1;
+		end
+		
+
+		if (in == 1) begin
+			if(out == 28'd250000000) begin
+				out = 28'd0;
+				RegClock = ~RegClock;
+			end
+			else
+				out = out + 1;
+		end
+		else begin
+			if(out == 28'd25000000) begin
+				out = 28'd0;
+				RegClock = ~RegClock;
+			end
+			else
+				out = out + 1;	
+		end
+	end
+
+	always @(*) begin
+		resultado =  interruptores[15:0];
+	end
+	
+//	assign novo_clock = RegClock;
+	assign novo_clock = clock;
+	assign resultado_entrada = resultado;
+	
+endmodule 

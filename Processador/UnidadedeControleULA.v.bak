@@ -1,0 +1,8 @@
+module UnidadedeControleULA (Funct, AluOp, ControleALU, JALR, JR);
+
+
+
+
+
+
+endmodule

@@ -1,0 +1,35 @@
+module BancodeRegistradores (
+
+input wire [4:0] ReadRegisterRS, ReadRegisterRD, WriteRegRT;
+input wire [31:0] WriteData;
+input wire [3:0] Unit_Control_RegWrite;
+input clock, WriteEnable;
+output wire [31:0] ReadDataRD, ReadDataRS, ReadDataRT;
+integer First_clock=1;
+);
+
+
+reg [31:0] registers [31:0];
+
+
+always @(posedge clock) begin
+	if (First_clock == 1) begin
+	   // Separo os 2 últimos registradores do banco para iniciá-los com valores padrão
+		registers[31] == 32'b00000000000000000000000001111111; // Último resgistrador do banco com valor 127 para traço (-) no display
+		registers[30] == 32'b00000000000000000000000001111110; // Valor 126 para display apagado
+		First_clock <= 2;
+	end
+	
+	if (WriteEnable) begin
+		registers[WriteRegRT] = WriteData; // Se a escrita no registrador estiver permitida pela UC, o dado será escrito no registrador
+		                                   // que de endereço WriteRegRT
+	end
+end
+
+assign ReadDataRS = registers[ReadRegisterRS];
+assign ReadDataRD = registers[WriteRegRT]; // O dado que escrevi no registrador do banco agora deve ser passado para RD
+// assign ReadDataRT = registers[ReadRegisterRD]; 
+
+
+endmodule
+

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador2/Mateus_Integrado_Finalizado_restored/simulation/qsim
+vhard_block
+Z0 !s110 1689377550
+!i10b 1
+!s100 kDIINWTSA?QPlIe?f0T1:3
+I3XihC[6[aEkk1Vm<cAj<b3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Arquivos/Unifesp/5Periodo/LAB_AOC/Processador/simulation/qsim
+Z3 w1689377549
+Z4 8mips.vo
+Z5 Fmips.vo
+L0 63439
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1689377550.000000
+Z8 !s107 mips.vo|
+Z9 !s90 -work|work|mips.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vUnidadedeProcessamento
+R0
+!i10b 1
+!s100 Agi<Kl`V1A=K05=ZeM0Rn0
+I<@VI0S]^L3?eL?:edH^Iz1
+R1
+R2
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@unidadede@processamento
+vUnidadedeProcessamento_vlg_vec_tst
+!s110 1689377551
+!i10b 1
+!s100 jE;`MO2gJCda9J6Ez^gV@2
+IcX7BmOL[4cE=1^I4hMFng2
+R1
+R2
+w1689377547
+8WaveformTeste.vwf.vt
+FWaveformTeste.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+!s108 1689377551.000000
+!s107 WaveformTeste.vwf.vt|
+!s90 -work|work|WaveformTeste.vwf.vt|
+!i113 1
+R10
+R11
+n@unidadede@processamento_vlg_vec_tst

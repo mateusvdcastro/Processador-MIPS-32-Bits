@@ -1,0 +1,7 @@
+module PC (clock, Instrucao, instrucaoAux, Selecao);
+
+	input wire clock, Selecao;
+	input wire [9:0] InstrucaoAux; // Depende do tamanho do ADDR_WIDTH?
+	input wire [9:0] Instrucao;
+	reg [9:0] InstrucaoAtual
+endmodule

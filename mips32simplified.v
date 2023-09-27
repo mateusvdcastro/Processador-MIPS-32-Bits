@@ -1,0 +1,76 @@
+module mips32simplified	(
+  input clk,
+  input reset,
+  input [31:0] instruction,
+  input [31:0] data1,
+  input [31:0] data2,
+  output [31:0] result
+);
+
+reg [31:0] PC;
+reg [31:0] instructionReg;
+reg [31:0] rsValue;
+reg [31:0] rtValue;
+reg [31:0] rdValue;
+reg [31:0] signExtImm;
+reg [31:0] aluResult;
+
+wire [31:0] branchTarget;
+wire [31:0] jumpTarget;
+wire [31:0] writeData;
+wire [31:0] nextPC;
+wire [4:0] opcode;
+wire [5:0] funct;
+
+// Instruction Fetch Stage
+assign nextPC = PC + 4;
+assign opcode = instruction[31:26];
+assign funct = instruction[5:0];
+assign instructionReg = instruction;
+
+// Instruction Decode Stage
+assign rsValue = data1;
+assign rtValue = data2;
+assign rdValue = instruction[15:11];
+assign signExtImm = {{16{instruction[15]}}, instruction[15:0]};
+
+// Execute Stage
+assign aluResult = (opcode == 6'b000001) ? branchTarget :
+                  (opcode == 6'b000010) ? jumpTarget :
+                  (opcode == 6'b001000) ? (rsValue + signExtImm) :
+                  (opcode == 6'b001010) ? (rsValue < signExtImm) :
+                  (opcode == 6'b000000 && funct == 6'b100000) ? (rsValue + rtValue) :
+                  (opcode == 6'b000000 && funct == 6'b100010) ? (rsValue - rtValue) :
+                  (opcode == 6'b000000 && funct == 6'b100100) ? (rsValue & rtValue) :
+                  (opcode == 6'b000000 && funct == 6'b100101) ? (rsValue | rtValue) :
+                  (opcode == 6'b000000 && funct == 6'b101010) ? (rsValue < rtValue) :
+                  (32'h0);
+
+assign branchTarget = PC + (signExtImm << 2);
+assign jumpTarget = {PC[31:28], instructionReg[25:0], 2'b0};
+
+// Memory Access Stage
+assign writeData = rtValue;
+
+// Write Back Stage
+assign result = aluResult;
+//assign {rsValue, rtValue}[rdValue] = writeData;
+
+// Pipeline Registers
+reg [31:0] PC_reg;
+reg [31:0] instructionReg_reg;
+reg [31:0] rsValue_reg;
+reg [31:0] rtValue_reg;
+reg [31:0] rdValue_reg;
+reg [31:0] signExtImm_reg;
+reg [31:0] aluResult_reg;
+
+always @(posedge clk) begin
+  if (reset) begin
+    PC_reg <= 32'h0;
+    instructionReg_reg <= 32'h0;
+    rsValue_reg <= 32'h0;
+    rtValue_reg <= 32'h0;
+    rdValue_reg <= 32'h0;
+	end;
+endmodule;

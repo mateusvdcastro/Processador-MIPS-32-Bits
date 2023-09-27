@@ -1,0 +1,697 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Display1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led",
+					"strict" : false
+				},
+				{
+					"name" : "zero",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Out_ULA[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[29]",
+					"strict" : false
+				},
+				{
+					"name" : "auxRS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "auxRS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "auxRT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_RegDST[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_RegDST[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_AluSrc[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Saida_MemToReg[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Wave_Dado1[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
