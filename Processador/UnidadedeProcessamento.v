@@ -28,7 +28,7 @@ module UnidadedeProcessamento (
 	wire [31:0] ReadDataRT;
 	
     // Fios dos bits de saida da unidade de controle
-    wire RegDst, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, PCFunct, BEQ, BNE, ControlJump, Halt, EnableClock, JAL, In, Out;
+    wire RegDst, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, PCFunct, BEQ, BNE, ControlBranch, ControlJump, Halt, EnableClock, JAL, In, Out;
     wire [2:0] AluOp;
 
     wire [31:0] Saida_MemDados; // Saida da memoria RAM
@@ -36,6 +36,8 @@ module UnidadedeProcessamento (
     // Unidade de controle da ULA
     wire [3:0]Unit_Control_ALU; // Bits para controle da ULA
     wire JALR, JR; // Bits de controle para os jumps especificos do tipo R
+	 
+	 wire Control_Branch;
 
     // MUX
     wire [4:0] Saida_RegDST;
@@ -62,6 +64,8 @@ module UnidadedeProcessamento (
     PC Chamada5(.clock(novo_clock), .Indice(valorPC), .IndiceAux(InstMem[25:0]), .Selecao(ControlJump));
     
 	 MemoriaInstrucoesROM Chamada3(.addr(valorPC), .q(InstMem)); 
+	 
+	 BNEandBEQ ChamadaBranchControl(.ControlBEQ(BEQ), .ControlBNE(BNE), .Zero(auxZero), .Control_Branch(Control_Branch));
 
     MuxRegDst Chamada9(.reg1(InstMem[15:11]), .reg2(InstMem[20:16]), .reg_saida(Saida_RegDST), .controle(RegDst));
 
@@ -70,12 +74,13 @@ module UnidadedeProcessamento (
 
     MuxALUSRC Chamada13 (.Dado2(ReadDataRT), .Imediato(InstMem[15:0]), .controle(ALUSrc), .Saida_AluSrc(Saida_AluSrc), .interruptores(resultado_entrada), .in(In));
     
-	ULA Chamada1(.Output_Result(auxALUOut), .operand1(ReadDataRS), .operand2(Saida_AluSrc), .zero(zero), .Unit_Control_ALU(Unit_Control_ALU));
+	 ULA Chamada1(.Output_Result(auxALUOut), .operand1(ReadDataRS), .operand2(Saida_AluSrc), .zero(auxZero), .Unit_Control_ALU(Unit_Control_ALU));
    
-    MemoriadeDadosRAM Chamda7(.data(ReadDataRT), .addr(auxALUOut), .we(MemWrite), .re(MemRead), .clk(novo_clock), .q(Saida_MemDados));
+    MemoriadeDadosRAM Chamada7(.data(ReadDataRT), .addr(auxALUOut), .we(MemWrite), .re(MemRead), .clk(novo_clock), .q(Saida_MemDados));
 
     MuxMemReg Chamada10(.Dado_ULA(auxALUOut), .Dado_Mem(Saida_MemDados), .Saida_MemReg(Saida_MemToReg), .controle(MemtoReg));
 	
+	assign zero = auxZero;
 	assign led = novo_clock;
 	assign Out_ULA = auxALUOut;
 	assign Inst = InstMem;

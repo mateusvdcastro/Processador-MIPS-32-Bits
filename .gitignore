@@ -1,0 +1,3 @@
+Processador/db/
+Processador/incremental_db/
+*.flock

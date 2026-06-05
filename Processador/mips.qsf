@@ -48,9 +48,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_H22 -to Display1[6]
 set_location_assignment PIN_J22 -to Display1[5]
 set_location_assignment PIN_L25 -to Display1[4]
@@ -79,26 +76,39 @@ set_location_assignment PIN_AA21 -to Display4[3]
 set_location_assignment PIN_AB20 -to Display4[2]
 set_location_assignment PIN_U21 -to Display4[1]
 set_location_assignment PIN_V21 -to Display4[0]
-set_location_assignment PIN_AB28 -to Interruptores[0]
-set_location_assignment PIN_AC28 -to Interruptores[1]
-set_location_assignment PIN_AC27 -to Interruptores[2]
-set_location_assignment PIN_AD27 -to Interruptores[3]
-set_location_assignment PIN_AB27 -to Interruptores[4]
-set_location_assignment PIN_AC26 -to Interruptores[5]
-set_location_assignment PIN_AD26 -to Interruptores[6]
-set_location_assignment PIN_AB26 -to Interruptores[7]
-set_location_assignment PIN_AC25 -to Interruptores[8]
-set_location_assignment PIN_AB25 -to Interruptores[9]
-set_location_assignment PIN_AC24 -to Interruptores[10]
-set_location_assignment PIN_AB24 -to Interruptores[11]
-set_location_assignment PIN_AB23 -to Interruptores[12]
-set_location_assignment PIN_AA24 -to Interruptores[13]
-set_location_assignment PIN_AA23 -to Interruptores[14]
-set_location_assignment PIN_AA22 -to Interruptores[15]
+set_location_assignment PIN_Y16 -to Interruptores[0]
+set_location_assignment PIN_AD21 -to Interruptores[1]
+set_location_assignment PIN_AE16 -to Interruptores[2]
+set_location_assignment PIN_AD15 -to Interruptores[3]
+set_location_assignment PIN_AE15 -to Interruptores[4]
+set_location_assignment PIN_AC19 -to Interruptores[5]
+set_location_assignment PIN_AF16 -to Interruptores[6]
+set_location_assignment PIN_AD19 -to Interruptores[7]
+set_location_assignment PIN_AF15 -to Interruptores[8]
+set_location_assignment PIN_AF24 -to Interruptores[9]
+set_location_assignment PIN_AE21 -to Interruptores[10]
+set_location_assignment PIN_AF25 -to Interruptores[11]
+set_location_assignment PIN_AC22 -to Interruptores[12]
+set_location_assignment PIN_AF21 -to Interruptores[13]
+set_location_assignment PIN_AF22 -to Interruptores[14]
+set_location_assignment PIN_AD22 -to Interruptores[15]
 set_location_assignment PIN_Y2 -to clock
 set_location_assignment PIN_F17 -to led
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE BNEandBEQ.v
 set_global_assignment -name VERILOG_FILE ULA.v
-set_global_assignment -name VERILOG_FILE "Banco de Registradores.v"
 set_global_assignment -name VERILOG_FILE BancodeRegistradores.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE WaveformBancoRegistradores.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE WaveformBancoRegistradores2.vwf
@@ -120,15 +130,7 @@ set_global_assignment -name VERILOG_FILE Display2.v
 set_global_assignment -name VERILOG_FILE Display3.v
 set_global_assignment -name VERILOG_FILE Display4.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Wave_IO.vwf
-set_global_assignment -name ENABLE_OCT_DONE OFF
-set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
-set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
-set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
-set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
-set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
-set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
-set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
-set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
-set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name VECTOR_WAVEFORM_FILE WaveformTeste.vwf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

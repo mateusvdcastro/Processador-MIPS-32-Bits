@@ -2,7 +2,7 @@
 // Single Port ROM
 
 module MemoriaInstrucoesROM
-#(parameter DATA_WIDTH=32, parameter ADDR_WIDTH=5)
+#(parameter DATA_WIDTH=32, parameter ADDR_WIDTH=10)
 (
 	input [(ADDR_WIDTH-1):0] addr,
 	

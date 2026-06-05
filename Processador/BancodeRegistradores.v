@@ -2,7 +2,7 @@ module BancodeRegistradores (
 
 input wire [4:0] ReadRegister1, ReadRegister2, WriteReg,
 input wire [31:0] WriteData,
-input wire [3:0] Unit_Control_RegWrite,
+input wire [3:0] Unit_Control_RegWrite, // Remove
 input clock, WriteEnable,
 output wire [31:0] ReadDataRD, ReadDataRS, ReadDataRT
 );

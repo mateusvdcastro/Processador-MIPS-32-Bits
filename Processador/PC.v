@@ -5,7 +5,7 @@ module PC (clock, Indice, IndiceAux, Selecao);
   output wire [9:0] Indice;
   reg [9:0] IndiceAtual;
   
-	integer contador = 1;
+	integer contador = 1; 
 	
 	
 	always @(posedge clock) begin
@@ -30,6 +30,3 @@ module PC (clock, Indice, IndiceAux, Selecao);
   assign Indice = IndiceAtual;
 	
 endmodule
-
-
-

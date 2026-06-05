@@ -224,11 +224,11 @@ module UnidadedeControle (
 			6'b001110: begin // BEQ
 				auxRegWrite <= 0;
 				auxPCFunct <= 1;
-				auxAluOp <= 3'b001; 
+				auxAluOp <= 3'b010; //sub 
 				auxMemRead <= 0;
 				auxMemWrite <= 1;
 				auxMemtoReg <= 0;
-				auxALUSrc <= 1;
+				auxALUSrc <= 0; // ReadDataRT
 				auxRegDst <= 0;
 				auxBEQ <= 0;
 				auxBNE <= 0;
@@ -241,7 +241,7 @@ module UnidadedeControle (
 			6'b001111: begin // BNE
 				auxRegWrite <= 0;
 				auxPCFunct <= 1;
-				auxAluOp <= 3'b001; 
+				auxAluOp <= 3'b010; 
 				auxMemRead <= 0;
 				auxMemWrite <= 1;
 				auxMemtoReg <= 0;

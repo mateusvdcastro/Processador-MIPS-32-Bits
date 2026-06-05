@@ -68,7 +68,7 @@ always @(operand1 or operand2 or Unit_Control_ALU) begin
 			
 		endcase 	
 			
-		if (Output_Result == 32'd0) begin
+		if (result == 32'd0) begin
 			Reg_Zero = 1'b1;
 		end
 		else begin
