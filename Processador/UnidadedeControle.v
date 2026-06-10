@@ -159,7 +159,7 @@ module UnidadedeControle (
 			6'b001000: begin // J
 				auxRegWrite <= 0;
 				auxPCFunct <= 1;
-//				auxAluOp <= 3'b001; // ???
+				auxAluOp <= 3'b001; //
 				auxMemRead <= 0;
 				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
@@ -190,7 +190,7 @@ module UnidadedeControle (
 			6'b001010: begin // JAL
 				auxRegWrite <= 0;
 				auxPCFunct <= 1;
-//				auxAluOp <= 3'b001; // ???
+				auxAluOp <= 3'b001; //
 				auxMemRead <= 0;
 				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
@@ -200,7 +200,7 @@ module UnidadedeControle (
 				auxBNE <= 0;
 				auxControlJump <= 1;
 				auxHalt <= 0;
-				auxJAL <= 0;
+				auxJAL <= 1;
 				auxOut <= 0;
 				auxIn <= 0;
 			end
@@ -209,7 +209,7 @@ module UnidadedeControle (
 				auxPCFunct <= 1;
 				auxAluOp <= 3'b001; 
 				auxMemRead <= 0;
-				auxMemWrite <= 1;
+				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
 				auxALUSrc <= 1;
 				auxRegDst <= 0;
@@ -226,11 +226,11 @@ module UnidadedeControle (
 				auxPCFunct <= 1;
 				auxAluOp <= 3'b010; //sub 
 				auxMemRead <= 0;
-				auxMemWrite <= 1;
+				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
 				auxALUSrc <= 0; // ReadDataRT
 				auxRegDst <= 0;
-				auxBEQ <= 0;
+				auxBEQ <= 1;
 				auxBNE <= 0;
 				auxControlJump <= 0;
 				auxHalt <= 0;
@@ -243,12 +243,12 @@ module UnidadedeControle (
 				auxPCFunct <= 1;
 				auxAluOp <= 3'b010; 
 				auxMemRead <= 0;
-				auxMemWrite <= 1;
+				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
-				auxALUSrc <= 1;
+				auxALUSrc <= 0;
 				auxRegDst <= 0;
 				auxBEQ <= 0;
-				auxBNE <= 0;
+				auxBNE <= 1;
 				auxControlJump <= 0;
 				auxHalt <= 0;
 				auxJAL <= 0;

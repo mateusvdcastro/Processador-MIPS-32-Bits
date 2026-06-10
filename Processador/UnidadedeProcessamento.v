@@ -19,6 +19,8 @@ module UnidadedeProcessamento (
     // Instrucao em binario saindo da Memoria ROM
 	wire [31:0] InstMem;
 
+	wire [31:0] ImediatoEstendido; // Saida do Extensor de Sinal
+
     // Saida da ULA
 	wire [31:0] auxALUOut;
 	wire auxZero;
@@ -37,7 +39,7 @@ module UnidadedeProcessamento (
     wire [3:0]Unit_Control_ALU; // Bits para controle da ULA
     wire JALR, JR; // Bits de controle para os jumps especificos do tipo R
 	 
-	 wire Control_Branch;
+	wire Control_Branch;
 
     // MUX
     wire [4:0] Saida_RegDST;
@@ -49,32 +51,52 @@ module UnidadedeProcessamento (
 	 wire [15:0] resultado_entrada;
     
 	integer auxSelec = 0; // Temporário, teste MEM e PC
-   wire [9:0] valorPC; // Indice de saída do PC
+    wire [9:0] valorPC; // Indice de saída do PC
+	wire [9:0] ProximoPC;
+	wire [9:0] EnderecoBranch;
+	wire [10:0] EnderecoBranch11;
+	wire [10:0] EnderecoJumpMux11;
+	wire [10:0] EnderecoFinalPC11;
+	wire [9:0] EnderecoFinalPC;
+	wire [31:0] EnderecoJump;
+
+	assign EnderecoBranch11 = {1'b0, EnderecoBranch};
+	assign EnderecoFinalPC = EnderecoFinalPC11[9:0];
 	
-	 Entrada Chamada11(.clock(clock), .novo_clock(novo_clock), .in(In), .interruptores(Interruptores), .resultado_entrada(resultado_entrada));
+	Entrada Chamada11(.clock(clock), .novo_clock(novo_clock), .in(In), .interruptores(Interruptores), .resultado_entrada(resultado_entrada));
 	 
-	 Out Chamada12 (.result_ULA(auxALUOut), .clock(novo_clock), .controle(Out), .display1(Display1), .display2(Display2), .display3(Display3), .display4(Display4));
+	Out Chamada12 (.result_ULA(auxALUOut), .clock(novo_clock), .controle(Out), .display1(Display1), .display2(Display2), .display3(Display3), .display4(Display4));
 
     UnidadedeControle Chamada6(.Opcode(InstMem[31:26]), .AluOp(AluOp), .RegDst(RegDst), .MemRead(MemRead), .MemtoReg(MemtoReg), .MemWrite(MemWrite), 
 	 .ALUSrc(ALUSrc), .RegWrite(RegWrite), .PCFunct(PCFunct), .BEQ(BEQ), .BNE(BNE), .ControlJump(ControlJump), .Halt(Halt), .EnableClock(EnableClock), 
 	 .JAL(JAL), .Out(Out), .In(In));
 
     UnidadedeControleULA Chamada8(.Funct(InstMem[5:0]), .AluOp(AluOp), .ControleALU(Unit_Control_ALU), .JALR(JALR), .JR(JR));
-                          
-    PC Chamada5(.clock(novo_clock), .Indice(valorPC), .IndiceAux(InstMem[25:0]), .Selecao(ControlJump));
     
-	 MemoriaInstrucoesROM Chamada3(.addr(valorPC), .q(InstMem)); 
+	MemoriaInstrucoesROM Chamada3(.addr(valorPC), .q(InstMem)); 
 	 
-	 BNEandBEQ ChamadaBranchControl(.ControlBEQ(BEQ), .ControlBNE(BNE), .Zero(auxZero), .Control_Branch(Control_Branch));
+	BNEandBEQ ChamadaBranchControl(.ControlBEQ(BEQ), .ControlBNE(BNE), .Zero(auxZero), .Control_Branch(Control_Branch));
+
+	ExtensorSinal ExtensorBranch(.Imediato16(InstMem[15:0]), .ImediatoExtenso32(ImediatoEstendido));
+
+	Branch BranchAddr(.Imediato(ImediatoEstendido), .PCAtual(valorPC), .MuxBranch(Control_Branch), .NovoEndereco(EnderecoBranch), .ProximoPC(ProximoPC));
+
+	Jump JumpAddr (.Imediato26Bits(InstMem[25:0]), .JumpContext(1'b0), .Imediato(ImediatoEstendido), .Instrucao(EnderecoJump));
+
+	MultiplexadorJump MuxJump (.NormalouBranch(EnderecoBranch11), .Jump(EnderecoJump), .ControleJump(ControlJump), .Escolhido_MultiplexadorJump(EnderecoJumpMux11));
+
+	MultiplexadorJumpReg MuxJumpReg (.Dado1(ReadDataRS), .Jump(EnderecoJumpMux11), .JALR(JALR), .JReg(JR), .Escolhido_MultiplexadorJumpReg(EnderecoFinalPC11));
 
     MuxRegDst Chamada9(.reg1(InstMem[15:11]), .reg2(InstMem[20:16]), .reg_saida(Saida_RegDST), .controle(RegDst));
+
+	PC Chamada5(.clock(novo_clock), .PCFunct(PCFunct), .ProximoEndereco(EnderecoFinalPC), .Indice(valorPC));
 
     BancodeRegistradores Chamada2(.clock(novo_clock), .ReadRegister1(InstMem[25:21]), .WriteEnable(RegWrite), 
 	.ReadRegister2(InstMem[20:16]), .WriteReg(Saida_RegDST), .WriteData(Saida_MemToReg), .ReadDataRS(ReadDataRS), .ReadDataRT(ReadDataRT));
 
     MuxALUSRC Chamada13 (.Dado2(ReadDataRT), .Imediato(InstMem[15:0]), .controle(ALUSrc), .Saida_AluSrc(Saida_AluSrc), .interruptores(resultado_entrada), .in(In));
     
-	 ULA Chamada1(.Output_Result(auxALUOut), .operand1(ReadDataRS), .operand2(Saida_AluSrc), .zero(auxZero), .Unit_Control_ALU(Unit_Control_ALU));
+	ULA Chamada1(.Output_Result(auxALUOut), .operand1(ReadDataRS), .operand2(Saida_AluSrc), .zero(auxZero), .Unit_Control_ALU(Unit_Control_ALU));
    
     MemoriadeDadosRAM Chamada7(.data(ReadDataRT), .addr(auxALUOut), .we(MemWrite), .re(MemRead), .clk(novo_clock), .q(Saida_MemDados));
 

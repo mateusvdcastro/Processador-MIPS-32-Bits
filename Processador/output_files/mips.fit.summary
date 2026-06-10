@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Jun 05 15:13:52 2026
+Fitter Status : Successful - Mon Jun 08 14:54:27 2026
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : mips
 Top-level Entity Name : UnidadedeProcessamento
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 2,897 / 114,480 ( 3 % )
-    Total combinational functions : 2,894 / 114,480 ( 3 % )
+Total logic elements : 2,887 / 114,480 ( 3 % )
+    Total combinational functions : 2,885 / 114,480 ( 3 % )
     Dedicated logic registers : 92 / 114,480 ( < 1 % )
 Total registers : 92
 Total pins : 253 / 529 ( 48 % )
