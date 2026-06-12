@@ -1,0 +1,12 @@
+1 10 hard_block 4 fast 83 C:/Users/Mateus/Documents/Processador-MIPS-32-Bits/Processador/simulation/qsim/work 0 0 0 0 21 0
+2 18 cycloneive_io_obuf 4 fast 58 c:/altera_lite/25.1std/questa_fse/intel/verilog/cycloneive 0 0 0 0 138 0
+2 18 cycloneive_io_ibuf 4 fast 58 c:/altera_lite/25.1std/questa_fse/intel/verilog/cycloneive 0 0 0 0 95 0
+2 16 cycloneive_mux41 4 fast 58 c:/altera_lite/25.1std/questa_fse/intel/verilog/cycloneive 0 0 0 0 67 0
+2 18 cycloneive_ena_reg 4 fast 58 c:/altera_lite/25.1std/questa_fse/intel/verilog/cycloneive 0 0 0 0 91 0
+2 18 cycloneive_clkctrl 4 fast 58 c:/altera_lite/25.1std/questa_fse/intel/verilog/cycloneive 0 0 131072 0 111 0
+2 21 cycloneive_lcell_comb 4 fast 58 c:/altera_lite/25.1std/questa_fse/intel/verilog/cycloneive 0 0 0 0 223 0
+2 21 cycloneive_lcell_comb 7 fast__1 58 c:/altera_lite/25.1std/questa_fse/intel/verilog/cycloneive 0 0 0 0 223 0
+2 13 PRIM_GDFF_LOW 7 verilog 54 c:/altera_lite/25.1std/questa_fse/intel/verilog/altera 0 0 0 0 0 0
+2 6 dffeas 4 fast 54 c:/altera_lite/25.1std/questa_fse/intel/verilog/altera 0 0 0 0 391 0
+1 22 UnidadedeProcessamento 4 fast 83 C:/Users/Mateus/Documents/Processador-MIPS-32-Bits/Processador/simulation/qsim/work 0 0 10403840 0 61244 0
+2 34 UnidadedeProcessamento_vlg_vec_tst 4 fast 83 C:/Users/Mateus/Documents/Processador-MIPS-32-Bits/Processador/simulation/qsim/work 0 0 0 0 65 0

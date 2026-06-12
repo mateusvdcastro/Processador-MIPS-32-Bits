@@ -256,23 +256,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "Inst[11]",
+					"name" : "Inst[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Inst[12]",
+					"name" : "Inst[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Inst[17]",
-					"strict" : false
-				},
-				{
-					"name" : "Inst[21]",
+					"name" : "Inst[3]",
 					"strict" : false
 				},
 				{
 					"name" : "Inst[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Inst[23]",
 					"strict" : false
 				},
 				{
@@ -284,23 +284,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "auxRS[0]",
-					"strict" : false
-				},
-				{
 					"name" : "auxRS[1]",
 					"strict" : false
 				},
 				{
-					"name" : "auxRT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_RegDST[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_RegDST[1]",
+					"name" : "auxRS[2]",
 					"strict" : false
 				},
 				{
@@ -317,118 +305,6 @@
 				},
 				{
 					"name" : "Wave_Saida_AluSrc[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[5]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[6]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[7]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[8]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[9]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[10]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[11]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[12]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[13]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[14]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[15]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[16]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[17]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[18]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[19]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[20]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[21]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[22]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[23]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[24]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[25]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[26]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[27]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[28]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[29]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[30]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Saida_AluSrc[31]",
 					"strict" : false
 				},
 				{
@@ -568,123 +444,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "Wave_Dado1[2]",
+					"name" : "Wave_Unit_Control_ALU[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Wave_Dado1[3]",
+					"name" : "Wave_Unit_Control_ALU[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Wave_Dado1[4]",
+					"name" : "Wave_Unit_Control_ALU[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Wave_Dado1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[7]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[8]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[9]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[10]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[11]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[12]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[13]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[14]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[15]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[16]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[17]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[18]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[19]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[20]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[21]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[22]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[23]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[24]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[25]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[26]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[27]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[28]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[29]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[30]",
-					"strict" : false
-				},
-				{
-					"name" : "Wave_Dado1[31]",
+					"name" : "Wave_Unit_Control_ALU[3]",
 					"strict" : false
 				},
 				{

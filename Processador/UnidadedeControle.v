@@ -188,7 +188,7 @@ module UnidadedeControle (
 //				auxJAL <= 0;
 //			end
 			6'b001010: begin // JAL
-				auxRegWrite <= 0;
+				auxRegWrite <= 1;
 				auxPCFunct <= 1;
 				auxAluOp <= 3'b001; //
 				auxMemRead <= 0;
@@ -291,17 +291,17 @@ module UnidadedeControle (
 			end
 			6'b111111: begin // Halt
 				auxRegWrite <= 0;
-				auxPCFunct <= 1;
+				auxPCFunct <= 0;
 				auxAluOp <= 3'b001; 
 				auxMemRead <= 0;
-				auxMemWrite <= 1;
+				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
 				auxALUSrc <= 1;
 				auxRegDst <= 0;
 				auxBEQ <= 0;
 				auxBNE <= 0;
 				auxControlJump <= 0;
-				auxHalt <= 0;
+				auxHalt <= 1;
 				auxJAL <= 0;
 				auxOut <= 0;
 				auxIn <= 0;
@@ -339,6 +339,23 @@ module UnidadedeControle (
 				auxJAL <= 0;
 				auxOut <= 0;
 				auxIn <= 1;
+			end
+			6'b010010: begin // XORI
+				auxRegWrite <= 1;
+				auxPCFunct <= 1;
+				auxAluOp <= 3'b110; // XOR 
+				auxMemRead <= 0;
+				auxMemWrite <= 0;
+				auxMemtoReg <= 0;
+				auxALUSrc <= 1;
+				auxRegDst <= 1;
+				auxBEQ <= 0;
+				auxBNE <= 0;
+				auxControlJump <= 0;
+				auxHalt <= 0;
+				auxJAL <= 0;
+				auxOut <= 0;
+				auxIn <= 0;
 			end
 		endcase
 	end

@@ -65,6 +65,7 @@ always @(operand1 or operand2 or Unit_Control_ALU) begin
 			4'b1010: result = ~(operand1 | operand2); // NOR
 			4'b1011: result = operand1 >> operand2; //SLL
 			4'b1100: result = operand1 << operand2; // SRL
+			4'b1101: result = operand1 ^ operand2; // XOR
 			
 		endcase 	
 			

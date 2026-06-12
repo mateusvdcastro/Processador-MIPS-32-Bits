@@ -1,17 +1,17 @@
- -- Copyright (C) 2019  Intel Corporation. All rights reserved.
- -- Your use of Intel Corporation's design tools, logic functions 
+ -- Copyright (C) 2025  Altera Corporation. All rights reserved.
+ -- Your use of Altera Corporation's design tools, logic functions 
  -- and other software and tools, and any partner logic 
  -- functions, and any output files from any of the foregoing 
  -- (including device programming or simulation files), and any 
  -- associated documentation or information are expressly subject 
- -- to the terms and conditions of the Intel Program License 
- -- Subscription Agreement, the Intel Quartus Prime License Agreement,
- -- the Intel FPGA IP License Agreement, or other applicable license
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, the Altera Quartus Prime License Agreement,
+ -- the Altera IP License Agreement, or other applicable license
  -- agreement, including, without limitation, that your use is for
  -- the sole purpose of programming logic devices manufactured by
- -- Intel and sold by Intel or its authorized distributors.  Please
- -- refer to the applicable agreement for further details, at
- -- https://fpgasoftware.intel.com/eula.
+ -- Altera and sold by Altera or its authorized distributors.  Please
+ -- refer to the Altera Software License Subscription Agreements 
+ -- on the Quartus Prime software download page.
  -- 
  -- This is a Quartus Prime output file. It is for reporting purposes only, and is
  -- not intended for use as a Quartus Prime input file. This file cannot be used
@@ -64,54 +64,54 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 CHIP  "mips"  ASSIGNED TO AN: EP4CE115F29C7
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT               : A3        :        :                   :         : 8         :                
-RESERVED_INPUT               : A4        :        :                   :         : 8         :                
+Out_ULA[15]                  : A4        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT               : A6        :        :                   :         : 8         :                
-RESERVED_INPUT               : A7        :        :                   :         : 8         :                
+Wave_Saida_MemToReg[2]       : A6        : output : 2.5 V             :         : 8         : N              
+Out_ULA[19]                  : A7        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT               : A8        :        :                   :         : 8         :                
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT               : A10       :        :                   :         : 8         :                
-Wave_Saida_AluSrc[21]        : A11       : output : 2.5 V             :         : 8         : N              
-Wave_Dado1[19]               : A12       : output : 2.5 V             :         : 8         : N              
+Out_ULA[9]                   : A10       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[20]      : A11       : output : 2.5 V             :         : 8         : N              
+Out_ULA[25]                  : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-Out_ULA[12]                  : A17       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[7]                : A18       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[13]               : A19       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_MemToReg[11]      : A17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : A18       :        :                   :         : 7         :                
+RESERVED_INPUT               : A19       :        :                   :         : 7         :                
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-Out_ULA[26]                  : A21       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[25]               : A22       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_RegDST[21]        : A23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : A21       :        :                   :         : 7         :                
+Wave_Dado1[13]               : A22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : A23       :        :                   :         : 7         :                
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
-Wave_Saida_RegDST[25]        : A25       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_AluSrc[4]         : A25       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT               : A26       :        :                   :         : 7         :                
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AA3       :        :                   :         : 2         :                
 RESERVED_INPUT               : AA4       :        :                   :         : 2         :                
-RESERVED_INPUT               : AA5       :        :                   :         : 2         :                
-RESERVED_INPUT               : AA6       :        :                   :         : 2         :                
+Wave_Saida_RegDST[19]        : AA5       : output : 2.5 V             :         : 2         : N              
+Wave_Saida_AluSrc[28]        : AA6       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT               : AA7       :        :                   :         : 2         :                
 RESERVED_INPUT               : AA8       :        :                   :         : 3         :                
 GNDA1                        : AA9       : gnd    :                   :         :           :                
-Inst[20]                     : AA10      : output : 2.5 V             :         : 3         : N              
+Wave_Dado1[28]               : AA10      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT               : AA12      :        :                   :         : 3         :                
-Wave_Saida_AluSrc[28]        : AA13      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT               : AA14      :        :                   :         : 3         :                
-Inst[21]                     : AA15      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_MemToReg[6]       : AA16      : output : 2.5 V             :         : 4         : N              
-Inst[11]                     : AA17      : output : 2.5 V             :         : 4         : N              
+Out_ULA[27]                  : AA12      : output : 2.5 V             :         : 3         : N              
+Out_ULA[23]                  : AA13      : output : 2.5 V             :         : 3         : N              
+Wave_Saida_MemToReg[23]      : AA14      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AA15      :        :                   :         : 4         :                
+RESERVED_INPUT               : AA16      :        :                   :         : 4         :                
+Wave_Dado1[23]               : AA17      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT               : AA19      :        :                   :         : 4         :                
 GNDA4                        : AA20      : gnd    :                   :         :           :                
@@ -129,21 +129,21 @@ RESERVED_INPUT               : AB3       :        :                   :         
 RESERVED_INPUT               : AB4       :        :                   :         : 2         :                
 RESERVED_INPUT               : AB5       :        :                   :         : 2         :                
 RESERVED_INPUT               : AB6       :        :                   :         : 2         :                
-Wave_Saida_RegDST[18]        : AB7       : output : 2.5 V             :         : 3         : N              
-Inst[9]                      : AB8       : output : 2.5 V             :         : 3         : N              
-Wave_Saida_RegDST[10]        : AB9       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT               : AB10      :        :                   :         : 3         :                
-Inst[8]                      : AB11      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT               : AB12      :        :                   :         : 3         :                
-RESERVED_INPUT               : AB13      :        :                   :         : 3         :                
-RESERVED_INPUT               : AB14      :        :                   :         : 3         :                
-auxRS[0]                     : AB15      : output : 2.5 V             :         : 4         : N              
-Out_ULA[6]                   : AB16      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT               : AB17      :        :                   :         : 4         :                
-RESERVED_INPUT               : AB18      :        :                   :         : 4         :                
-RESERVED_INPUT               : AB19      :        :                   :         : 4         :                
+Wave_Dado1[9]                : AB7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AB8       :        :                   :         : 3         :                
+Wave_Dado1[4]                : AB9       : output : 2.5 V             :         : 3         : N              
+Inst[23]                     : AB10      : output : 2.5 V             :         : 3         : N              
+auxRS[2]                     : AB11      : output : 2.5 V             :         : 3         : N              
+Wave_Saida_AluSrc[24]        : AB12      : output : 2.5 V             :         : 3         : N              
+Inst[2]                      : AB13      : output : 2.5 V             :         : 3         : N              
+Wave_Saida_MemToReg[27]      : AB14      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AB15      :        :                   :         : 4         :                
+RESERVED_INPUT               : AB16      :        :                   :         : 4         :                
+auxRT[4]                     : AB17      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_RegDST[15]        : AB18      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_RegDST[6]         : AB19      : output : 2.5 V             :         : 4         : N              
 Display4[2]                  : AB20      : output : 2.5 V             :         : 4         : Y              
-RESERVED_INPUT               : AB21      :        :                   :         : 4         :                
+Wave_Dado1[7]                : AB21      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT               : AB22      :        :                   :         : 4         :                
 Interruptores[12]            : AB23      : input  : 2.5 V             :         : 5         : Y              
 Interruptores[11]            : AB24      : input  : 2.5 V             :         : 5         : Y              
@@ -152,27 +152,27 @@ Interruptores[7]             : AB26      : input  : 2.5 V             :         
 Interruptores[4]             : AB27      : input  : 2.5 V             :         : 5         : Y              
 Interruptores[0]             : AB28      : input  : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : AC1       :        :                   :         : 2         :                
-RESERVED_INPUT               : AC2       :        :                   :         : 2         :                
+Wave_Dado1[30]               : AC2       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT               : AC3       :        :                   :         : 2         :                
 RESERVED_INPUT               : AC4       :        :                   :         : 2         :                
 RESERVED_INPUT               : AC5       :        :                   :         : 2         :                
 GND                          : AC6       : gnd    :                   :         :           :                
-RESERVED_INPUT               : AC7       :        :                   :         : 3         :                
+Wave_Saida_AluSrc[25]        : AC7       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT               : AC8       :        :                   :         : 3         :                
 GND                          : AC9       : gnd    :                   :         :           :                
-RESERVED_INPUT               : AC10      :        :                   :         : 3         :                
-Inst[10]                     : AC11      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT               : AC12      :        :                   :         : 3         :                
+Wave_Dado1[1]                : AC10      : output : 2.5 V             :         : 3         : N              
+Wave_Saida_RegDST[23]        : AC11      : output : 2.5 V             :         : 3         : N              
+Inst[3]                      : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-RESERVED_INPUT               : AC14      :        :                   :         : 3         :                
+Wave_Saida_MemToReg[16]      : AC14      : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT               : AC15      :        :                   :         : 4         :                
 GND                          : AC16      : gnd    :                   :         :           :                
-Inst[0]                      : AC17      : output : 2.5 V             :         : 4         : N              
+Inst[13]                     : AC17      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT               : AC18      :        :                   :         : 4         :                
-RESERVED_INPUT               : AC19      :        :                   :         : 4         :                
+Wave_Saida_RegDST[0]         : AC19      : output : 2.5 V             :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
-Inst[2]                      : AC21      : output : 2.5 V             :         : 4         : N              
-Inst[5]                      : AC22      : output : 2.5 V             :         : 4         : N              
+Inst[11]                     : AC21      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_RegDST[24]        : AC22      : output : 2.5 V             :         : 4         : N              
 GND                          : AC23      : gnd    :                   :         :           :                
 Interruptores[10]            : AC24      : input  : 2.5 V             :         : 5         : Y              
 Interruptores[8]             : AC25      : input  : 2.5 V             :         : 5         : Y              
@@ -182,194 +182,194 @@ Interruptores[1]             : AC28      : input  : 2.5 V             :         
 RESERVED_INPUT               : AD1       :        :                   :         : 2         :                
 RESERVED_INPUT               : AD2       :        :                   :         : 2         :                
 RESERVED_INPUT               : AD3       :        :                   :         : 2         :                
-RESERVED_INPUT               : AD4       :        :                   :         : 3         :                
-RESERVED_INPUT               : AD5       :        :                   :         : 3         :                
+Wave_Dado1[12]               : AD4       : output : 2.5 V             :         : 3         : N              
+Inst[19]                     : AD5       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT               : AD7       :        :                   :         : 3         :                
-Inst[4]                      : AD8       : output : 2.5 V             :         : 3         : N              
+Wave_Saida_RegDST[12]        : AD8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT               : AD10      :        :                   :         : 3         :                
+Inst[14]                     : AD10      : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT               : AD11      :        :                   :         : 3         :                
-RESERVED_INPUT               : AD12      :        :                   :         : 3         :                
+zero                         : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT               : AD14      :        :                   :         : 3         :                
-Wave_Saida_MemToReg[13]      : AD15      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_RegDST[28]        : AD14      : output : 2.5 V             :         : 3         : N              
+Wave_Saida_RegDST[1]         : AD15      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
-Wave_Saida_AluSrc[25]        : AD17      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_RegDST[0]         : AD18      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT               : AD19      :        :                   :         : 4         :                
+RESERVED_INPUT               : AD17      :        :                   :         : 4         :                
+Wave_Saida_AluSrc[15]        : AD18      : output : 2.5 V             :         : 4         : N              
+Wave_Dado1[8]                : AD19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
-Inst[26]                     : AD21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AD21      :        :                   :         : 4         :                
 RESERVED_INPUT               : AD22      :        :                   :         : 4         :                
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
 Display4[4]                  : AD24      : output : 2.5 V             :         : 4         : Y              
-Wave_Saida_RegDST[17]        : AD25      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AD25      :        :                   :         : 4         :                
 Interruptores[6]             : AD26      : input  : 2.5 V             :         : 5         : Y              
 Interruptores[3]             : AD27      : input  : 2.5 V             :         : 5         : Y              
-RESERVED_INPUT               : AD28      :        :                   :         : 5         :                
+Inst[20]                     : AD28      : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : AE1       :        :                   :         : 2         :                
 RESERVED_INPUT               : AE2       :        :                   :         : 2         :                
-Wave_Saida_RegDST[5]         : AE3       : output : 2.5 V             :         : 2         : N              
-Wave_Saida_RegDST[14]        : AE4       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AE3       :        :                   :         : 2         :                
+RESERVED_INPUT               : AE4       :        :                   :         : 3         :                
 RESERVED_INPUT               : AE5       :        :                   :         : 3         :                
-RESERVED_INPUT               : AE6       :        :                   :         : 3         :                
-RESERVED_INPUT               : AE7       :        :                   :         : 3         :                
-auxRS[4]                     : AE8       : output : 2.5 V             :         : 3         : N              
+Wave_Dado1[29]               : AE6       : output : 2.5 V             :         : 3         : N              
+Inst[26]                     : AE7       : output : 2.5 V             :         : 3         : N              
+Wave_Saida_RegDST[8]         : AE8       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT               : AE9       :        :                   :         : 3         :                
 RESERVED_INPUT               : AE10      :        :                   :         : 3         :                
-RESERVED_INPUT               : AE11      :        :                   :         : 3         :                
-auxRS[3]                     : AE12      : output : 2.5 V             :         : 3         : N              
+auxRS[4]                     : AE11      : output : 2.5 V             :         : 3         : N              
+Wave_Saida_AluSrc[10]        : AE12      : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT               : AE13      :        :                   :         : 3         :                
-RESERVED_INPUT               : AE14      :        :                   :         : 3         :                
-Inst[23]                     : AE15      : output : 2.5 V             :         : 4         : N              
-Wave_Dado1[23]               : AE16      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_AluSrc[24]        : AE17      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_MemToReg[28]      : AE18      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_MemToReg[21]      : AE19      : output : 2.5 V             :         : 4         : N              
-Wave_Dado1[30]               : AE20      : output : 2.5 V             :         : 4         : N              
-Out_ULA[9]                   : AE21      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT               : AE22      :        :                   :         : 4         :                
+Wave_Saida_RegDST[26]        : AE14      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AE15      :        :                   :         : 4         :                
+RESERVED_INPUT               : AE16      :        :                   :         : 4         :                
+RESERVED_INPUT               : AE17      :        :                   :         : 4         :                
+RESERVED_INPUT               : AE18      :        :                   :         : 4         :                
+RESERVED_INPUT               : AE19      :        :                   :         : 4         :                
+Wave_Saida_RegDST[7]         : AE20      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AE21      :        :                   :         : 4         :                
+Wave_Saida_AluSrc[8]         : AE22      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT               : AE23      :        :                   :         : 4         :                
 RESERVED_INPUT               : AE24      :        :                   :         : 4         :                
-Wave_Saida_RegDST[19]        : AE25      : output : 2.5 V             :         : 4         : N              
+Inst[8]                      : AE25      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT               : AE26      :        :                   :         : 5         :                
 RESERVED_INPUT               : AE27      :        :                   :         : 5         :                
-RESERVED_INPUT               : AE28      :        :                   :         : 5         :                
+Wave_Saida_RegDST[31]        : AE28      : output : 2.5 V             :         : 5         : N              
 GND                          : AF1       : gnd    :                   :         :           :                
-RESERVED_INPUT               : AF2       :        :                   :         : 2         :                
-RESERVED_INPUT               : AF3       :        :                   :         : 3         :                
-RESERVED_INPUT               : AF4       :        :                   :         : 3         :                
-RESERVED_INPUT               : AF5       :        :                   :         : 3         :                
-Wave_Saida_RegDST[8]         : AF6       : output : 2.5 V             :         : 3         : N              
-Wave_Saida_RegDST[16]        : AF7       : output : 2.5 V             :         : 3         : N              
-Wave_Saida_RegDST[30]        : AF8       : output : 2.5 V             :         : 3         : N              
+Wave_Dado1[15]               : AF2       : output : 2.5 V             :         : 2         : N              
+Wave_Saida_AluSrc[6]         : AF3       : output : 2.5 V             :         : 3         : N              
+Wave_Saida_AluSrc[16]        : AF4       : output : 2.5 V             :         : 3         : N              
+Wave_Saida_RegDST[27]        : AF5       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AF6       :        :                   :         : 3         :                
+RESERVED_INPUT               : AF7       :        :                   :         : 3         :                
+Wave_Dado1[10]               : AF8       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT               : AF9       :        :                   :         : 3         :                
-RESERVED_INPUT               : AF10      :        :                   :         : 3         :                
-Inst[15]                     : AF11      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT               : AF12      :        :                   :         : 3         :                
-Wave_Unit_Control_ALU[3]     : AF13      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT               : AF14      :        :                   :         : 3         :                
-Wave_Saida_AluSrc[19]        : AF15      : output : 2.5 V             :         : 4         : N              
-Out_ULA[17]                  : AF16      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_AluSrc[17]        : AF17      : output : 2.5 V             :         : 4         : N              
-Out_ULA[28]                  : AF18      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_MemToReg[18]      : AF19      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_AluSrc[0]         : AF10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AF11      :        :                   :         : 3         :                
+Wave_Saida_RegDST[14]        : AF12      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AF13      :        :                   :         : 3         :                
+Out_ULA[16]                  : AF14      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AF15      :        :                   :         : 4         :                
+RESERVED_INPUT               : AF16      :        :                   :         : 4         :                
+RESERVED_INPUT               : AF17      :        :                   :         : 4         :                
+RESERVED_INPUT               : AF18      :        :                   :         : 4         :                
+RESERVED_INPUT               : AF19      :        :                   :         : 4         :                
 RESERVED_INPUT               : AF20      :        :                   :         : 4         :                
-Wave_Saida_RegDST[6]         : AF21      : output : 2.5 V             :         : 4         : N              
+auxRT[0]                     : AF21      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT               : AF22      :        :                   :         : 4         :                
 Display4[5]                  : AF23      : output : 2.5 V             :         : 4         : Y              
-Out_ULA[18]                  : AF24      : output : 2.5 V             :         : 4         : N              
-Out_ULA[21]                  : AF25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT               : AF26      :        :                   :         : 4         :                
-RESERVED_INPUT               : AF27      :        :                   :         : 5         :                
+RESERVED_INPUT               : AF24      :        :                   :         : 4         :                
+RESERVED_INPUT               : AF25      :        :                   :         : 4         :                
+Wave_Saida_RegDST[21]        : AF26      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_AluSrc[12]        : AF27      : output : 2.5 V             :         : 5         : N              
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
-Inst[24]                     : AG3       : output : 2.5 V             :         : 3         : N              
+auxRT[1]                     : AG3       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT               : AG4       :        :                   :         : 3         :                
 GND                          : AG5       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AG6       :        :                   :         : 3         :                
 RESERVED_INPUT               : AG7       :        :                   :         : 3         :                
 RESERVED_INPUT               : AG8       :        :                   :         : 3         :                
 GND                          : AG9       : gnd    :                   :         :           :                
-Inst[25]                     : AG10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AG10      :        :                   :         : 3         :                
 RESERVED_INPUT               : AG11      :        :                   :         : 3         :                
-Wave_Saida_RegDST[4]         : AG12      : output : 2.5 V             :         : 3         : N              
+Wave_Dado1[16]               : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
 GND                          : AG16      : gnd    :                   :         :           :                
-Wave_Dado1[18]               : AG17      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_AluSrc[18]        : AG18      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_AluSrc[30]        : AG19      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AG17      :        :                   :         : 4         :                
+Wave_Dado1[26]               : AG18      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AG19      :        :                   :         : 4         :                
 GND                          : AG20      : gnd    :                   :         :           :                
-Wave_Dado1[28]               : AG21      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_MemToReg[9]       : AG22      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_AluSrc[29]        : AG23      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_RegDST[17]        : AG21      : output : 2.5 V             :         : 4         : N              
+Inst[15]                     : AG22      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_AluSrc[7]         : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-Wave_Saida_RegDST[13]        : AG25      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AG25      :        :                   :         : 4         :                
 RESERVED_INPUT               : AG26      :        :                   :         : 4         :                
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT               : AH3       :        :                   :         : 3         :                
-Wave_Saida_RegDST[3]         : AH4       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AH4       :        :                   :         : 3         :                
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT               : AH6       :        :                   :         : 3         :                
-RESERVED_INPUT               : AH7       :        :                   :         : 3         :                
+Wave_Saida_RegDST[4]         : AH6       : output : 2.5 V             :         : 3         : N              
+Inst[30]                     : AH7       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT               : AH8       :        :                   :         : 3         :                
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT               : AH10      :        :                   :         : 3         :                
 RESERVED_INPUT               : AH11      :        :                   :         : 3         :                
-RESERVED_INPUT               : AH12      :        :                   :         : 3         :                
+Wave_Saida_AluSrc[18]        : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
 VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
-Wave_Dado1[22]               : AH17      : output : 2.5 V             :         : 4         : N              
-Wave_Dado1[17]               : AH18      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_AluSrc[31]        : AH19      : output : 2.5 V             :         : 4         : N              
+Wave_Dado1[17]               : AH17      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_RegDST[18]        : AH18      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AH19      :        :                   :         : 4         :                
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
-Wave_Dado1[29]               : AH21      : output : 2.5 V             :         : 4         : N              
-Wave_Dado1[14]               : AH22      : output : 2.5 V             :         : 4         : N              
-Wave_Saida_MemToReg[17]      : AH23      : output : 2.5 V             :         : 4         : N              
+Wave_Saida_RegDST[3]         : AH21      : output : 2.5 V             :         : 4         : N              
+Wave_Dado1[2]                : AH22      : output : 2.5 V             :         : 4         : N              
+Wave_Dado1[20]               : AH23      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-Wave_Saida_RegDST[28]        : AH25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT               : AH26      :        :                   :         : 4         :                
+RESERVED_INPUT               : AH25      :        :                   :         : 4         :                
+Inst[12]                     : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-Wave_Saida_RegDST[9]         : B3        : output : 2.5 V             :         : 8         : N              
-Wave_Saida_RegDST[20]        : B4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : B3        :        :                   :         : 8         :                
+Wave_Saida_MemToReg[15]      : B4        : output : 2.5 V             :         : 8         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-RESERVED_INPUT               : B6        :        :                   :         : 8         :                
-RESERVED_INPUT               : B7        :        :                   :         : 8         :                
+Wave_Unit_Control_ALU[1]     : B6        : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[19]      : B7        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT               : B8        :        :                   :         : 8         :                
 GND                          : B9        : gnd    :                   :         :           :                
-RESERVED_INPUT               : B10       :        :                   :         : 8         :                
-RESERVED_INPUT               : B11       :        :                   :         : 8         :                
+Wave_Saida_MemToReg[9]       : B10       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[10]      : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-Out_ULA[2]                   : B17       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[3]                : B18       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[8]         : B19       : output : 2.5 V             :         : 7         : N              
+Out_ULA[26]                  : B17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : B18       :        :                   :         : 7         :                
+Wave_Saida_RegDST[29]        : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-Wave_Saida_AluSrc[1]         : B21       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_MemToReg[26]      : B22       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[7]         : B23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : B21       :        :                   :         : 7         :                
+Inst[27]                     : B22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : B23       :        :                   :         : 7         :                
 GND                          : B24       : gnd    :                   :         :           :                
 RESERVED_INPUT               : B25       :        :                   :         : 7         :                
-Inst[13]                     : B26       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : B26       :        :                   :         : 7         :                
 GND                          : B27       : gnd    :                   :         :           :                
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
-Inst[7]                      : C2        : output : 2.5 V             :         : 1         : N              
-Wave_Saida_RegDST[29]        : C3        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : C2        :        :                   :         : 1         :                
+RESERVED_INPUT               : C3        :        :                   :         : 8         :                
 RESERVED_INPUT               : C4        :        :                   :         : 8         :                
 RESERVED_INPUT               : C5        :        :                   :         : 8         :                
 RESERVED_INPUT               : C6        :        :                   :         : 8         :                
-auxRT[4]                     : C7        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT               : C8        :        :                   :         : 8         :                
-Wave_Saida_RegDST[1]         : C9        : output : 2.5 V             :         : 8         : N              
-Inst[14]                     : C10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : C7        :        :                   :         : 8         :                
+Wave_Saida_RegDST[9]         : C8        : output : 2.5 V             :         : 8         : N              
+Inst[25]                     : C9        : output : 2.5 V             :         : 8         : N              
+Out_ULA[5]                   : C10       : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT               : C11       :        :                   :         : 8         :                
-Wave_Saida_AluSrc[20]        : C12       : output : 2.5 V             :         : 8         : N              
-Wave_Saida_MemToReg[0]       : C13       : output : 2.5 V             :         : 8         : N              
-Out_ULA[16]                  : C14       : output : 2.5 V             :         : 8         : N              
-Wave_Saida_MemToReg[2]       : C15       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[11]        : C16       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[13]        : C17       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[2]                : C18       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_MemToReg[23]      : C19       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[9]         : C20       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[5]         : C21       : output : 2.5 V             :         : 7         : N              
-Out_ULA[29]                  : C22       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : C23       :        :                   :         : 7         :                
-Out_ULA[8]                   : C24       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : C25       :        :                   :         : 7         :                
+Out_ULA[22]                  : C12       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[30]      : C13       : output : 2.5 V             :         : 8         : N              
+Out_ULA[28]                  : C14       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[5]       : C15       : output : 2.5 V             :         : 7         : N              
+Wave_Dado1[25]               : C16       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_RegDST[2]         : C17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : C18       :        :                   :         : 7         :                
+Inst[4]                      : C19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : C20       :        :                   :         : 7         :                
+RESERVED_INPUT               : C21       :        :                   :         : 7         :                
+RESERVED_INPUT               : C22       :        :                   :         : 7         :                
+Wave_Dado1[3]                : C23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : C24       :        :                   :         : 7         :                
+auxRT[3]                     : C25       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT               : C26       :        :                   :         : 7         :                
 RESERVED_INPUT               : C27       :        :                   :         : 6         :                
 GND                          : C28       : gnd    :                   :         :           :                
@@ -378,176 +378,176 @@ RESERVED_INPUT               : D2        :        :                   :         
 GND                          : D3        : gnd    :                   :         :           :                
 RESERVED_INPUT               : D4        :        :                   :         : 8         :                
 RESERVED_INPUT               : D5        :        :                   :         : 8         :                
-Wave_Saida_MemToReg[25]      : D6        : output : 2.5 V             :         : 8         : N              
+Wave_Dado1[6]                : D6        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT               : D7        :        :                   :         : 8         :                
-RESERVED_INPUT               : D8        :        :                   :         : 8         :                
-RESERVED_INPUT               : D9        :        :                   :         : 8         :                
-Out_ULA[14]                  : D10       : output : 2.5 V             :         : 8         : N              
-Wave_Saida_RegDST[2]         : D11       : output : 2.5 V             :         : 8         : N              
-Out_ULA[15]                  : D12       : output : 2.5 V             :         : 8         : N              
-Out_ULA[0]                   : D13       : output : 2.5 V             :         : 8         : N              
-Wave_Dado1[20]               : D14       : output : 2.5 V             :         : 8         : N              
-Wave_Saida_MemToReg[20]      : D15       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_MemToReg[4]       : D16       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[4]         : D17       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[0]                : D18       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[5]                : D19       : output : 2.5 V             :         : 7         : N              
-zero                         : D20       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_MemToReg[29]      : D21       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : D22       :        :                   :         : 7         :                
-Wave_Saida_RegDST[27]        : D23       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[24]               : D24       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : D25       :        :                   :         : 7         :                
+Wave_Saida_RegDST[11]        : D8        : output : 2.5 V             :         : 8         : N              
+Wave_Saida_AluSrc[19]        : D9        : output : 2.5 V             :         : 8         : N              
+Out_ULA[31]                  : D10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : D11       :        :                   :         : 8         :                
+Wave_Saida_MemToReg[22]      : D12       : output : 2.5 V             :         : 8         : N              
+Out_ULA[29]                  : D13       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[25]      : D14       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[26]      : D15       : output : 2.5 V             :         : 7         : N              
+Out_ULA[2]                   : D16       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_AluSrc[20]        : D17       : output : 2.5 V             :         : 7         : N              
+Inst[16]                     : D18       : output : 2.5 V             :         : 7         : N              
+Inst[7]                      : D19       : output : 2.5 V             :         : 7         : N              
+Wave_Dado1[22]               : D20       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_RegDST[22]        : D21       : output : 2.5 V             :         : 7         : N              
+Wave_Dado1[19]               : D22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : D23       :        :                   :         : 7         :                
+Wave_Dado1[21]               : D24       : output : 2.5 V             :         : 7         : N              
+Wave_Dado1[11]               : D25       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT               : D26       :        :                   :         : 6         :                
 RESERVED_INPUT               : D27       :        :                   :         : 6         :                
-Inst[1]                      : D28       : output : 2.5 V             :         : 6         : N              
+Inst[9]                      : D28       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT               : E1        :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
-Wave_Saida_RegDST[11]        : E3        : output : 2.5 V             :         : 1         : N              
-auxRT[3]                     : E4        : output : 2.5 V             :         : 8         : N              
+Wave_Saida_AluSrc[21]        : E3        : output : 2.5 V             :         : 1         : N              
+Wave_Saida_RegDST[30]        : E4        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT               : E5        :        :                   :         : 8         :                
 VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT               : E7        :        :                   :         : 8         :                
-Wave_Unit_Control_ALU[0]     : E8        : output : 2.5 V             :         : 8         : N              
+Inst[18]                     : E7        : output : 2.5 V             :         : 8         : N              
+Wave_Saida_AluSrc[26]        : E8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-Wave_Unit_Control_ALU[2]     : E10       : output : 2.5 V             :         : 8         : N              
-auxRT[2]                     : E11       : output : 2.5 V             :         : 8         : N              
-Inst[16]                     : E12       : output : 2.5 V             :         : 8         : N              
+Inst[10]                     : E10       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_AluSrc[14]        : E11       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[31]      : E12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT               : E14       :        :                   :         : 8         :                
-Out_ULA[31]                  : E15       : output : 2.5 V             :         : 7         : N              
+Out_ULA[24]                  : E14       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[29]      : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
 Display1[2]                  : E17       : output : 2.5 V             :         : 7         : Y              
-Wave_Saida_AluSrc[16]        : E18       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_MemToReg[8]       : E19       : output : 2.5 V             :         : 7         : N              
+Wave_Dado1[24]               : E18       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : E19       :        :                   :         : 7         :                
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT               : E21       :        :                   :         : 7         :                
-RESERVED_INPUT               : E22       :        :                   :         : 7         :                
+Inst[31]                     : E22       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-Out_ULA[4]                   : E24       : output : 2.5 V             :         : 7         : N              
-Out_ULA[23]                  : E25       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[9]                : E26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : E24       :        :                   :         : 7         :                
+RESERVED_INPUT               : E25       :        :                   :         : 7         :                
+RESERVED_INPUT               : E26       :        :                   :         : 6         :                
 RESERVED_INPUT               : E27       :        :                   :         : 6         :                
-RESERVED_INPUT               : E28       :        :                   :         : 6         :                
+Wave_Saida_AluSrc[29]        : E28       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT               : F1        :        :                   :         : 1         :                
 RESERVED_INPUT               : F2        :        :                   :         : 1         :                
 RESERVED_INPUT               : F3        :        :                   :         : 1         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : F5        :        :                   :         : 1         :                
 GND                          : F6        : gnd    :                   :         :           :                
-auxRS[2]                     : F7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : F7        :        :                   :         : 8         :                
 RESERVED_INPUT               : F8        :        :                   :         : 8         :                
 GND                          : F9        : gnd    :                   :         :           :                
 RESERVED_INPUT               : F10       :        :                   :         : 8         :                
-RESERVED_INPUT               : F11       :        :                   :         : 8         :                
-Wave_Saida_MemToReg[14]      : F12       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[6]       : F11       : output : 2.5 V             :         : 8         : N              
+Out_ULA[6]                   : F12       : output : 2.5 V             :         : 8         : N              
 GND                          : F13       : gnd    :                   :         :           :                
-RESERVED_INPUT               : F14       :        :                   :         : 8         :                
-Wave_Saida_MemToReg[31]      : F15       : output : 2.5 V             :         : 7         : N              
+Out_ULA[20]                  : F14       : output : 2.5 V             :         : 8         : N              
+Out_ULA[11]                  : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
 led                          : F17       : output : 2.5 V             :         : 7         : Y              
-Wave_Dado1[1]                : F18       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_RegDST[7]         : F19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : F18       :        :                   :         : 7         :                
+auxRT[2]                     : F19       : output : 2.5 V             :         : 7         : N              
 GND                          : F20       : gnd    :                   :         :           :                
 RESERVED_INPUT               : F21       :        :                   :         : 7         :                
 Display1[1]                  : F22       : output : 2.5 V             :         : 7         : Y              
 GND                          : F23       : gnd    :                   :         :           :                
 RESERVED_INPUT               : F24       :        :                   :         : 6         :                
 RESERVED_INPUT               : F25       :        :                   :         : 6         :                
-RESERVED_INPUT               : F26       :        :                   :         : 6         :                
+Wave_Dado1[27]               : F26       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT               : F27       :        :                   :         : 6         :                
 RESERVED_INPUT               : F28       :        :                   :         : 6         :                
-RESERVED_INPUT               : G1        :        :                   :         : 1         :                
-RESERVED_INPUT               : G2        :        :                   :         : 1         :                
+Wave_Dado1[0]                : G1        : output : 2.5 V             :         : 1         : N              
+Inst[22]                     : G2        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : G3        :        :                   :         : 1         :                
 RESERVED_INPUT               : G4        :        :                   :         : 1         :                
 RESERVED_INPUT               : G5        :        :                   :         : 1         :                
 RESERVED_INPUT               : G6        :        :                   :         : 1         :                
-RESERVED_INPUT               : G7        :        :                   :         : 8         :                
+Inst[21]                     : G7        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT               : G8        :        :                   :         : 8         :                
-Out_ULA[25]                  : G9        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT               : G10       :        :                   :         : 8         :                
+Wave_Saida_AluSrc[27]        : G9        : output : 2.5 V             :         : 8         : N              
+Wave_Dado1[18]               : G10       : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT               : G11       :        :                   :         : 8         :                
-RESERVED_INPUT               : G12       :        :                   :         : 8         :                
-RESERVED_INPUT               : G13       :        :                   :         : 8         :                
-Wave_Saida_MemToReg[27]      : G14       : output : 2.5 V             :         : 8         : N              
-Wave_Saida_AluSrc[15]        : G15       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[12]        : G16       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[4]                : G17       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_AluSrc[23]        : G12       : output : 2.5 V             :         : 8         : N              
+Inst[1]                      : G13       : output : 2.5 V             :         : 8         : N              
+Out_ULA[30]                  : G14       : output : 2.5 V             :         : 8         : N              
+Inst[6]                      : G15       : output : 2.5 V             :         : 7         : N              
+auxRS[0]                     : G16       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : G17       :        :                   :         : 7         :                
 Display1[0]                  : G18       : output : 2.5 V             :         : 7         : Y              
-Wave_Dado1[11]               : G19       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[15]               : G20       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[10]               : G21       : output : 2.5 V             :         : 7         : N              
-Inst[28]                     : G22       : output : 2.5 V             :         : 7         : N              
+Inst[28]                     : G19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : G20       :        :                   :         : 7         :                
+RESERVED_INPUT               : G21       :        :                   :         : 7         :                
+Wave_Saida_RegDST[25]        : G22       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT               : G23       :        :                   :         : 6         :                
-RESERVED_INPUT               : G24       :        :                   :         : 6         :                
-Inst[30]                     : G25       : output : 2.5 V             :         : 6         : N              
+Wave_Saida_AluSrc[30]        : G24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : G25       :        :                   :         : 6         :                
 RESERVED_INPUT               : G26       :        :                   :         : 6         :                
-Wave_Dado1[21]               : G27       : output : 2.5 V             :         : 6         : N              
-auxRT[1]                     : G28       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : G27       :        :                   :         : 6         :                
+RESERVED_INPUT               : G28       :        :                   :         : 6         :                
 VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
 GND                          : H2        : gnd    :                   :         :           :                
 RESERVED_INPUT               : H3        :        :                   :         : 1         :                
-RESERVED_INPUT               : H4        :        :                   :         : 1         :                
+Wave_Saida_AluSrc[17]        : H4        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : H5        :        :                   :         : 1         :                
 RESERVED_INPUT               : H6        :        :                   :         : 1         :                
-Wave_Unit_Control_ALU[1]     : H7        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT               : H8        :        :                   :         : 8         :                
+RESERVED_INPUT               : H7        :        :                   :         : 1         :                
+Wave_Saida_RegDST[5]         : H8        : output : 2.5 V             :         : 8         : N              
 GNDA3                        : H9        : gnd    :                   :         :           :                
-RESERVED_INPUT               : H10       :        :                   :         : 8         :                
+Inst[24]                     : H10       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT               : H12       :        :                   :         : 8         :                
-Inst[12]                     : H13       : output : 2.5 V             :         : 8         : N              
-Wave_Saida_MemToReg[16]      : H14       : output : 2.5 V             :         : 8         : N              
-Out_ULA[20]                  : H15       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_MemToReg[15]      : H16       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[6]         : H17       : output : 2.5 V             :         : 7         : N              
+Out_ULA[10]                  : H13       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[28]      : H14       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[13]      : H15       : output : 2.5 V             :         : 7         : N              
+Out_ULA[14]                  : H16       : output : 2.5 V             :         : 7         : N              
+Out_ULA[1]                   : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
-auxRS[1]                     : H19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : H19       :        :                   :         : 7         :                
 GNDA2                        : H20       : gnd    :                   :         :           :                
-Wave_Dado1[8]                : H21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : H21       :        :                   :         : 7         :                
 Display1[6]                  : H22       : output : 2.5 V             :         : 6         : Y              
 RESERVED_INPUT               : H23       :        :                   :         : 6         :                
 RESERVED_INPUT               : H24       :        :                   :         : 6         :                
 RESERVED_INPUT               : H25       :        :                   :         : 6         :                
-RESERVED_INPUT               : H26       :        :                   :         : 6         :                
+Wave_Saida_AluSrc[9]         : H26       : output : 2.5 V             :         : 6         : N              
 GND                          : H27       : gnd    :                   :         :           :                
 VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
 GND+                         : J1        :        :                   :         : 1         :                
 GND                          : J2        : gnd    :                   :         :           :                
 RESERVED_INPUT               : J3        :        :                   :         : 1         :                
-Inst[3]                      : J4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : J4        :        :                   :         : 1         :                
 RESERVED_INPUT               : J5        :        :                   :         : 1         :                
-Inst[27]                     : J6        : output : 2.5 V             :         : 1         : N              
-Inst[18]                     : J7        : output : 2.5 V             :         : 1         : N              
+Out_ULA[12]                  : J6        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : J7        :        :                   :         : 1         :                
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-Wave_Saida_RegDST[15]        : J10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : J10       :        :                   :         : 8         :                
 GND                          : J11       : gnd    :                   :         :           :                
-RESERVED_INPUT               : J12       :        :                   :         : 8         :                
-RESERVED_INPUT               : J13       :        :                   :         : 8         :                
-Out_ULA[27]                  : J14       : output : 2.5 V             :         : 8         : N              
-Wave_Saida_MemToReg[12]      : J15       : output : 2.5 V             :         : 7         : N              
-Wave_Saida_AluSrc[22]        : J16       : output : 2.5 V             :         : 7         : N              
-Wave_Dado1[12]               : J17       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_MemToReg[21]      : J12       : output : 2.5 V             :         : 8         : N              
+Out_ULA[21]                  : J13       : output : 2.5 V             :         : 8         : N              
+Wave_Saida_MemToReg[24]      : J14       : output : 2.5 V             :         : 8         : N              
+Out_ULA[13]                  : J15       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_MemToReg[14]      : J16       : output : 2.5 V             :         : 7         : N              
+Wave_Saida_MemToReg[1]       : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
-Inst[22]                     : J19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : J19       :        :                   :         : 7         :                
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
 Display1[5]                  : J22       : output : 2.5 V             :         : 6         : Y              
 RESERVED_INPUT               : J23       :        :                   :         : 6         :                
 RESERVED_INPUT               : J24       :        :                   :         : 6         :                
-Wave_Saida_AluSrc[10]        : J25       : output : 2.5 V             :         : 6         : N              
-Inst[17]                     : J26       : output : 2.5 V             :         : 6         : N              
+Wave_Saida_AluSrc[22]        : J25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : J26       :        :                   :         : 6         :                
 GND+                         : J27       :        :                   :         : 6         :                
 GND+                         : J28       :        :                   :         : 6         :                
 RESERVED_INPUT               : K1        :        :                   :         : 1         :                
-Wave_Saida_RegDST[31]        : K2        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT               : K3        :        :                   :         : 1         :                
+Wave_Dado1[14]               : K2        : output : 2.5 V             :         : 1         : N              
+auxRS[1]                     : K3        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : K4        :        :                   :         : 1         :                
 VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
 GND                          : K6        : gnd    :                   :         :           :                
-Wave_Saida_RegDST[26]        : K7        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : K7        :        :                   :         : 1         :                
 RESERVED_INPUT               : K8        :        :                   :         : 1         :                
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
@@ -566,16 +566,16 @@ RESERVED_INPUT               : K22       :        :                   :         
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
 RESERVED_INPUT               : K25       :        :                   :         : 6         :                
-auxRT[0]                     : K26       : output : 2.5 V             :         : 6         : N              
-Wave_Saida_MemToReg[22]      : K27       : output : 2.5 V             :         : 6         : N              
-Wave_Saida_MemToReg[1]       : K28       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT               : L1        :        :                   :         : 1         :                
+RESERVED_INPUT               : K26       :        :                   :         : 6         :                
+RESERVED_INPUT               : K27       :        :                   :         : 6         :                
+RESERVED_INPUT               : K28       :        :                   :         : 6         :                
+Wave_Saida_MemToReg[18]      : L1        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : L2        :        :                   :         : 1         :                
-RESERVED_INPUT               : L3        :        :                   :         : 1         :                
-RESERVED_INPUT               : L4        :        :                   :         : 1         :                
+Out_ULA[7]                   : L3        : output : 2.5 V             :         : 1         : N              
+Wave_Saida_MemToReg[7]       : L4        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : L5        :        :                   :         : 1         :                
-RESERVED_INPUT               : L6        :        :                   :         : 1         :                
-RESERVED_INPUT               : L7        :        :                   :         : 1         :                
+Out_ULA[17]                  : L6        : output : 2.5 V             :         : 1         : N              
+Wave_Saida_MemToReg[17]      : L7        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : L8        :        :                   :         : 1         :                
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
@@ -591,20 +591,20 @@ GND                          : L19       : gnd    :                   :         
 VCCINT                       : L20       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : L21       :        :                   :         : 6         :                
 RESERVED_INPUT               : L22       :        :                   :         : 6         :                
-Out_ULA[1]                   : L23       : output : 2.5 V             :         : 6         : N              
-Out_ULA[22]                  : L24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : L23       :        :                   :         : 6         :                
+RESERVED_INPUT               : L24       :        :                   :         : 6         :                
 Display1[4]                  : L25       : output : 2.5 V             :         : 6         : Y              
 Display1[3]                  : L26       : output : 2.5 V             :         : 6         : Y              
-Out_ULA[24]                  : L27       : output : 2.5 V             :         : 6         : N              
-Out_ULA[3]                   : L28       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT               : M1        :        :                   :         : 1         :                
+RESERVED_INPUT               : L27       :        :                   :         : 6         :                
+RESERVED_INPUT               : L28       :        :                   :         : 6         :                
+Out_ULA[18]                  : M1        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : M2        :        :                   :         : 1         :                
 RESERVED_INPUT               : M3        :        :                   :         : 1         :                
 RESERVED_INPUT               : M4        :        :                   :         : 1         :                
-Wave_Saida_MemToReg[19]      : M5        : output : 2.5 V             :         : 1         : N              
+Wave_Saida_MemToReg[12]      : M5        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : M6        :        :                   :         : 1         :                
-RESERVED_INPUT               : M7        :        :                   :         : 1         :                
-RESERVED_INPUT               : M8        :        :                   :         : 1         :                
+Wave_Saida_MemToReg[4]       : M7        : output : 2.5 V             :         : 1         : N              
+Out_ULA[4]                   : M8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
@@ -619,20 +619,20 @@ VCCINT                       : M19       : power  :                   : 1.2V    
 GND                          : M20       : gnd    :                   :         :           :                
 RESERVED_INPUT               : M21       :        :                   :         : 6         :                
 MSEL2                        : M22       :        :                   :         : 6         :                
-Wave_Saida_MemToReg[3]       : M23       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : M23       :        :                   :         : 6         :                
 Display2[0]                  : M24       : output : 2.5 V             :         : 6         : Y              
-Wave_Saida_AluSrc[3]         : M25       : output : 2.5 V             :         : 6         : N              
-Wave_Saida_AluSrc[0]         : M26       : output : 2.5 V             :         : 6         : N              
-Wave_Saida_AluSrc[27]        : M27       : output : 2.5 V             :         : 6         : N              
-Wave_Dado1[26]               : M28       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : M25       :        :                   :         : 6         :                
+RESERVED_INPUT               : M26       :        :                   :         : 6         :                
+RESERVED_INPUT               : M27       :        :                   :         : 6         :                
+RESERVED_INPUT               : M28       :        :                   :         : 6         :                
 VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
 GND                          : N2        : gnd    :                   :         :           :                
 RESERVED_INPUT               : N3        :        :                   :         : 1         :                
-RESERVED_INPUT               : N4        :        :                   :         : 1         :                
+Inst[5]                      : N4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
 GND                          : N6        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
-Inst[6]                      : N8        : output : 2.5 V             :         : 1         : N              
+Wave_Saida_AluSrc[1]         : N8        : output : 2.5 V             :         : 1         : N              
 GND                          : N9        : gnd    :                   :         :           :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
@@ -645,16 +645,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-Wave_Dado1[31]               : N21       : output : 2.5 V             :         : 6         : N              
+Wave_Saida_MemToReg[3]       : N21       : output : 2.5 V             :         : 6         : N              
 MSEL0                        : N22       :        :                   :         : 6         :                
 GND                          : N23       : gnd    :                   :         :           :                
 VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
-Wave_Saida_AluSrc[26]        : N25       : output : 2.5 V             :         : 6         : N              
-Wave_Dado1[16]               : N26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : N25       :        :                   :         : 6         :                
+RESERVED_INPUT               : N26       :        :                   :         : 6         :                
 GND                          : N27       : gnd    :                   :         :           :                
 VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
-Out_ULA[19]                  : P1        : output : 2.5 V             :         : 1         : N              
-Wave_Saida_AluSrc[14]        : P2        : output : 2.5 V             :         : 1         : N              
+Wave_Saida_AluSrc[31]        : P1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : P2        :        :                   :         : 1         :                
 ~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
 nCONFIG                      : P4        :        :                   :         : 1         :                
 TCK                          : P5        : input  :                   :         : 1         :                
@@ -673,21 +673,21 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-Wave_Saida_MemToReg[11]      : P21       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : P21       :        :                   :         : 5         :                
 MSEL3                        : P22       :        :                   :         : 6         :                
 MSEL1                        : P23       :        :                   :         : 6         :                
 CONF_DONE                    : P24       :        :                   :         : 6         :                
-Wave_Saida_MemToReg[24]      : P25       : output : 2.5 V             :         : 6         : N              
-Inst[29]                     : P26       : output : 2.5 V             :         : 6         : N              
-Wave_Saida_AluSrc[2]         : P27       : output : 2.5 V             :         : 6         : N              
+Out_ULA[3]                   : P25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : P26       :        :                   :         : 6         :                
+RESERVED_INPUT               : P27       :        :                   :         : 6         :                
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT               : R1        :        :                   :         : 2         :                
-RESERVED_INPUT               : R2        :        :                   :         : 2         :                
-RESERVED_INPUT               : R3        :        :                   :         : 2         :                
-Wave_Saida_RegDST[12]        : R4        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT               : R5        :        :                   :         : 2         :                
-RESERVED_INPUT               : R6        :        :                   :         : 2         :                
-RESERVED_INPUT               : R7        :        :                   :         : 2         :                
+Wave_Saida_AluSrc[3]         : R1        : output : 2.5 V             :         : 2         : N              
+Wave_Saida_AluSrc[2]         : R2        : output : 2.5 V             :         : 2         : N              
+Wave_Unit_Control_ALU[3]     : R3        : output : 2.5 V             :         : 2         : N              
+Wave_Saida_MemToReg[0]       : R4        : output : 2.5 V             :         : 2         : N              
+Inst[17]                     : R5        : output : 2.5 V             :         : 2         : N              
+Wave_Saida_MemToReg[8]       : R6        : output : 2.5 V             :         : 2         : N              
+Inst[0]                      : R7        : output : 2.5 V             :         : 2         : N              
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -701,18 +701,18 @@ GND                          : R17       : gnd    :                   :         
 VCCINT                       : R18       : power  :                   : 1.2V    :           :                
 GND                          : R19       : gnd    :                   :         :           :                
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
-Out_ULA[5]                   : R21       : output : 2.5 V             :         : 5         : N              
-Wave_Saida_MemToReg[5]       : R22       : output : 2.5 V             :         : 5         : N              
-Out_ULA[11]                  : R23       : output : 2.5 V             :         : 5         : N              
-Wave_Dado1[27]               : R24       : output : 2.5 V             :         : 5         : N              
-Out_ULA[30]                  : R25       : output : 2.5 V             :         : 5         : N              
-Wave_Saida_MemToReg[30]      : R26       : output : 2.5 V             :         : 5         : N              
-Out_ULA[10]                  : R27       : output : 2.5 V             :         : 5         : N              
-Wave_Saida_MemToReg[10]      : R28       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : R21       :        :                   :         : 5         :                
+RESERVED_INPUT               : R22       :        :                   :         : 5         :                
+RESERVED_INPUT               : R23       :        :                   :         : 5         :                
+RESERVED_INPUT               : R24       :        :                   :         : 5         :                
+Wave_Saida_AluSrc[11]        : R25       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : R26       :        :                   :         : 5         :                
+RESERVED_INPUT               : R27       :        :                   :         : 5         :                
+RESERVED_INPUT               : R28       :        :                   :         : 5         :                
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
 RESERVED_INPUT               : T3        :        :                   :         : 2         :                
-RESERVED_INPUT               : T4        :        :                   :         : 2         :                
+Wave_Unit_Control_ALU[0]     : T4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
 RESERVED_INPUT               : T7        :        :                   :         : 2         :                
@@ -729,22 +729,22 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-Wave_Saida_MemToReg[7]       : T21       : output : 2.5 V             :         : 5         : N              
-Out_ULA[7]                   : T22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : T21       :        :                   :         : 5         :                
+RESERVED_INPUT               : T22       :        :                   :         : 5         :                
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT               : T25       :        :                   :         : 5         :                
+Wave_Dado1[5]                : T25       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : T26       :        :                   :         : 5         :                
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT               : U1        :        :                   :         : 2         :                
 RESERVED_INPUT               : U2        :        :                   :         : 2         :                
-RESERVED_INPUT               : U3        :        :                   :         : 2         :                
-RESERVED_INPUT               : U4        :        :                   :         : 2         :                
+Out_ULA[8]                   : U3        : output : 2.5 V             :         : 2         : N              
+Wave_Unit_Control_ALU[2]     : U4        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT               : U5        :        :                   :         : 2         :                
 RESERVED_INPUT               : U6        :        :                   :         : 2         :                
 RESERVED_INPUT               : U7        :        :                   :         : 2         :                
-RESERVED_INPUT               : U8        :        :                   :         : 2         :                
+Wave_Saida_RegDST[13]        : U8        : output : 2.5 V             :         : 2         : N              
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -761,12 +761,12 @@ Display4[1]                  : U21       : output : 2.5 V             :         
 RESERVED_INPUT               : U22       :        :                   :         : 5         :                
 Display2[5]                  : U23       : output : 2.5 V             :         : 5         : Y              
 Display2[6]                  : U24       : output : 2.5 V             :         : 5         : Y              
-Wave_Saida_AluSrc[23]        : U25       : output : 2.5 V             :         : 5         : N              
-Wave_Saida_RegDST[23]        : U26       : output : 2.5 V             :         : 5         : N              
-Wave_Dado1[6]                : U27       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : U25       :        :                   :         : 5         :                
+RESERVED_INPUT               : U26       :        :                   :         : 5         :                
+RESERVED_INPUT               : U27       :        :                   :         : 5         :                
 RESERVED_INPUT               : U28       :        :                   :         : 5         :                
-RESERVED_INPUT               : V1        :        :                   :         : 2         :                
-RESERVED_INPUT               : V2        :        :                   :         : 2         :                
+Out_ULA[0]                   : V1        : output : 2.5 V             :         : 2         : N              
+Wave_Saida_RegDST[20]        : V2        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT               : V3        :        :                   :         : 2         :                
 RESERVED_INPUT               : V4        :        :                   :         : 2         :                
 RESERVED_INPUT               : V5        :        :                   :         : 2         :                
@@ -789,18 +789,18 @@ Display4[0]                  : V21       : output : 2.5 V             :         
 RESERVED_INPUT               : V22       :        :                   :         : 5         :                
 RESERVED_INPUT               : V23       :        :                   :         : 5         :                
 RESERVED_INPUT               : V24       :        :                   :         : 5         :                
-RESERVED_INPUT               : V25       :        :                   :         : 5         :                
+Wave_Saida_AluSrc[13]        : V25       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : V26       :        :                   :         : 5         :                
 RESERVED_INPUT               : V27       :        :                   :         : 5         :                
-Inst[19]                     : V28       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : V28       :        :                   :         : 5         :                
 RESERVED_INPUT               : W1        :        :                   :         : 2         :                
-RESERVED_INPUT               : W2        :        :                   :         : 2         :                
+Wave_Dado1[31]               : W2        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT               : W3        :        :                   :         : 2         :                
 RESERVED_INPUT               : W4        :        :                   :         : 2         :                
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
 GND                          : W6        : gnd    :                   :         :           :                
 RESERVED_INPUT               : W7        :        :                   :         : 2         :                
-Wave_Saida_RegDST[24]        : W8        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : W8        :        :                   :         : 2         :                
 GND                          : W9        : gnd    :                   :         :           :                
 VCCINT                       : W10       : power  :                   : 1.2V    :           :                
 GND                          : W11       : gnd    :                   :         :           :                
@@ -827,23 +827,23 @@ RESERVED_INPUT               : Y3        :        :                   :         
 RESERVED_INPUT               : Y4        :        :                   :         : 2         :                
 RESERVED_INPUT               : Y5        :        :                   :         : 2         :                
 RESERVED_INPUT               : Y6        :        :                   :         : 2         :                
-Wave_Saida_RegDST[22]        : Y7        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : Y7        :        :                   :         : 2         :                
 VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : Y10       :        :                   :         : 3         :                
 GND                          : Y11       : gnd    :                   :         :           :                
-RESERVED_INPUT               : Y12       :        :                   :         : 3         :                
-RESERVED_INPUT               : Y13       :        :                   :         : 3         :                
-Out_ULA[13]                  : Y14       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT               : Y15       :        :                   :         : 3         :                
-Inst[31]                     : Y16       : output : 2.5 V             :         : 4         : N              
+Inst[29]                     : Y12       : output : 2.5 V             :         : 3         : N              
+Wave_Saida_RegDST[10]        : Y13       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : Y14       :        :                   :         : 3         :                
+Wave_Saida_AluSrc[5]         : Y15       : output : 2.5 V             :         : 3         : N              
+Wave_Saida_RegDST[16]        : Y16       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT               : Y17       :        :                   :         : 4         :                
 GND                          : Y18       : gnd    :                   :         :           :                
 Display4[6]                  : Y19       : output : 2.5 V             :         : 4         : Y              
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
 Display2[1]                  : Y22       : output : 2.5 V             :         : 5         : Y              
-RESERVED_INPUT               : Y23       :        :                   :         : 5         :                
+auxRS[3]                     : Y23       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : Y24       :        :                   :         : 5         :                
 Display3[2]                  : Y25       : output : 2.5 V             :         : 5         : Y              
 Display3[4]                  : Y26       : output : 2.5 V             :         : 5         : Y              

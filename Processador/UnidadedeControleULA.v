@@ -92,6 +92,11 @@ module UnidadedeControleULA (Funct, AluOp, ControleALU, JALR, JR);
 						RegJALR <= 0;
 						RegJR <= 0;	
 					end
+					6'b010000: begin // XOR
+						RegControle <= 4'b1101; // 
+						RegJALR <= 0;
+						RegJR <= 0;	
+					end
 				endcase
 			end
 			3'b001: begin // SOMA
@@ -118,6 +123,11 @@ module UnidadedeControleULA (Funct, AluOp, ControleALU, JALR, JR);
 				RegControle <= 4'b0100;
 				RegJALR <= 0;
 				RegJR <= 0;
+			end
+			3'b110:begin // XOR
+				RegControle <= 4'b1101;
+				RegJALR <= 0;
+				RegJR <= 0;	
 			end
 		endcase
 	end

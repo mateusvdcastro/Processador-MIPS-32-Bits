@@ -38,7 +38,12 @@ module UnidadedeProcessamento (
     // Unidade de controle da ULA
     wire [3:0]Unit_Control_ALU; // Bits para controle da ULA
     wire JALR, JR; // Bits de controle para os jumps especificos do tipo R
-	 
+	
+	wire RegWriteHabilitado;
+
+	wire [4:0] Saida_DestinoFinal;
+	wire [31:0] Saida_WriteDataFinal;
+
 	wire Control_Branch;
 
     // MUX
@@ -46,9 +51,9 @@ module UnidadedeProcessamento (
     wire [31:0] Saida_AluSrc;
     wire [31:0] Saida_MemToReg;
 	 
-	 // Modulo de Entrada
-	 wire novo_clock;
-	 wire [15:0] resultado_entrada;
+	// Modulo de Entrada
+	wire novo_clock;
+	wire [15:0] resultado_entrada;
     
 	integer auxSelec = 0; // Temporário, teste MEM e PC
     wire [9:0] valorPC; // Indice de saída do PC
@@ -60,9 +65,16 @@ module UnidadedeProcessamento (
 	wire [9:0] EnderecoFinalPC;
 	wire [31:0] EnderecoJump;
 
+	// Sinais de Interrupção
+	wire int_halt, int_clk;
+	wire [9:0] save_pc_halt;
+	wire PCFunctHabilitaHalt;
+
 	assign EnderecoBranch11 = {1'b0, EnderecoBranch};
 	assign EnderecoFinalPC = EnderecoFinalPC11[9:0];
-	
+	assign PCFunctHabilitaHalt = PCFunct & ~int_halt;
+	assign RegWriteHabilitado = RegWrite & ~JR;
+
 	Entrada Chamada11(.clock(clock), .novo_clock(novo_clock), .in(In), .interruptores(Interruptores), .resultado_entrada(resultado_entrada));
 	 
 	Out Chamada12 (.result_ULA(auxALUOut), .clock(novo_clock), .controle(Out), .display1(Display1), .display2(Display2), .display3(Display3), .display4(Display4));
@@ -89,10 +101,14 @@ module UnidadedeProcessamento (
 
     MuxRegDst Chamada9(.reg1(InstMem[15:11]), .reg2(InstMem[20:16]), .reg_saida(Saida_RegDST), .controle(RegDst));
 
-	PC Chamada5(.clock(novo_clock), .PCFunct(PCFunct), .ProximoEndereco(EnderecoFinalPC), .Indice(valorPC));
+	MultiplexadorDestino MuxDestino (.RegDst(Saida_RegDST), .JAL(JAL), .JALR(JALR), .Escolhido_MultiplexadorDestino(Saida_DestinoFinal));
 
-    BancodeRegistradores Chamada2(.clock(novo_clock), .ReadRegister1(InstMem[25:21]), .WriteEnable(RegWrite), 
-	.ReadRegister2(InstMem[20:16]), .WriteReg(Saida_RegDST), .WriteData(Saida_MemToReg), .ReadDataRS(ReadDataRS), .ReadDataRT(ReadDataRT));
+	Interruption ChamadaInterruption(.halt(Halt), .clk(novo_clock), .pc(valorPC), .int_halt(int_halt), .save_pc(save_pc_halt));
+
+	PC Chamada5(.clock(novo_clock), .PCFunct(PCFunctHabilitaHalt), .ProximoEndereco(EnderecoFinalPC), .Indice(valorPC));
+
+    BancodeRegistradores Chamada2(.clock(novo_clock), .ReadRegister1(InstMem[25:21]), .WriteEnable(RegWriteHabilitado), 
+	.ReadRegister2(InstMem[20:16]), .WriteReg(Saida_DestinoFinal), .WriteData(Saida_WriteDataFinal), .ReadDataRS(ReadDataRS), .ReadDataRT(ReadDataRT));
 
     MuxALUSRC Chamada13 (.Dado2(ReadDataRT), .Imediato(InstMem[15:0]), .controle(ALUSrc), .Saida_AluSrc(Saida_AluSrc), .interruptores(resultado_entrada), .in(In));
     
@@ -102,6 +118,8 @@ module UnidadedeProcessamento (
 
     MuxMemReg Chamada10(.Dado_ULA(auxALUOut), .Dado_Mem(Saida_MemDados), .Saida_MemReg(Saida_MemToReg), .controle(MemtoReg));
 	
+	MultiplexadorJAL MuxJAL (    .ProximoPC({1'b0, ProximoPC}), .EscolhidoMemToReg(Saida_MemToReg), .JALR(JALR), .JUMPAL(JAL), .Escolhido_MultiplexadorJAL(Saida_WriteDataFinal));
+
 	assign zero = auxZero;
 	assign led = novo_clock;
 	assign Out_ULA = auxALUOut;

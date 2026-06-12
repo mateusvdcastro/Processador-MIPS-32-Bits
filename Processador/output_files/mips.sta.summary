@@ -2,40 +2,112 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : -126.208
+TNS   : -1913.041
+
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -91.451
-TNS   : -1741.170
+Slack : -88.305
+TNS   : -1291.595
+
+Type  : Slow 1200mV 85C Model Setup 'PC:Chamada5|IndiceAtual[0]'
+Slack : -8.619
+TNS   : -48.947
+
+Type  : Slow 1200mV 85C Model Hold 'PC:Chamada5|IndiceAtual[0]'
+Slack : -0.070
+TNS   : -0.070
+
+Type  : Slow 1200mV 85C Model Hold 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : 0.465
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.478
+Slack : 0.940
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -121.220
+TNS   : -37.695
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PC:Chamada5|IndiceAtual[0]'
+Slack : -1.151
+TNS   : -57.451
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : -113.867
+TNS   : -1729.649
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -82.566
-TNS   : -1570.555
+Slack : -79.838
+TNS   : -1166.226
+
+Type  : Slow 1200mV 0C Model Setup 'PC:Chamada5|IndiceAtual[0]'
+Slack : -7.947
+TNS   : -45.430
+
+Type  : Slow 1200mV 0C Model Hold 'PC:Chamada5|IndiceAtual[0]'
+Slack : -0.032
+TNS   : -0.032
+
+Type  : Slow 1200mV 0C Model Hold 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : 0.374
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.431
+Slack : 0.831
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -121.220
+TNS   : -37.695
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PC:Chamada5|IndiceAtual[0]'
+Slack : -1.013
+TNS   : -49.366
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : -62.355
+TNS   : -932.613
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -44.617
-TNS   : -809.065
+Slack : -43.422
+TNS   : -622.478
+
+Type  : Fast 1200mV 0C Model Setup 'PC:Chamada5|IndiceAtual[0]'
+Slack : -4.317
+TNS   : -23.837
+
+Type  : Fast 1200mV 0C Model Hold 'PC:Chamada5|IndiceAtual[0]'
+Slack : -0.084
+TNS   : -0.084
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.220
+Slack : 0.254
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : 0.274
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -102.266
+TNS   : -31.840
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PC:Chamada5|IndiceAtual[0]'
+Slack : -0.419
+TNS   : -12.647
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UnidadedeControleULA:Chamada8|RegControle[1]'
+Slack : 0.310
+TNS   : 0.000
 
 ------------------------------------------------------------
