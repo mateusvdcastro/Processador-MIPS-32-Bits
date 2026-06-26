@@ -45,7 +45,7 @@ module UnidadedeControle (
 				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
 				auxALUSrc <= 1;
-				auxRegDst <= 0;
+				auxRegDst <= 1;
 				auxBEQ <= 0;
 				auxBNE <= 0;
 				auxControlJump <= 0;
@@ -57,12 +57,12 @@ module UnidadedeControle (
 			6'b000010: begin //SUBI
 				auxRegWrite <= 1;
 				auxPCFunct <= 1;
-				auxAluOp <= 3'b001;
+				auxAluOp <= 3'b010;
 				auxMemRead <= 0;
 				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
 				auxALUSrc <= 1;
-				auxRegDst <= 0;
+				auxRegDst <= 1;
 				auxBEQ <= 0;
 				auxBNE <= 0;
 				auxControlJump <= 0;
@@ -91,12 +91,12 @@ module UnidadedeControle (
 			6'b000100: begin //ORI
 				auxRegWrite <= 1;
 				auxPCFunct <= 1;
-				auxAluOp <= 3'b001;
+				auxAluOp <= 3'b100;
 				auxMemRead <= 0;
 				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
 				auxALUSrc <= 1;
-				auxRegDst <= 0;
+				auxRegDst <= 1;
 				auxBEQ <= 0;
 				auxBNE <= 0;
 				auxControlJump <= 0;
@@ -205,14 +205,14 @@ module UnidadedeControle (
 				auxIn <= 0;
 			end
 			6'b001101: begin // SLTI
-				auxRegWrite <= 0;
+				auxRegWrite <= 1;
 				auxPCFunct <= 1;
-				auxAluOp <= 3'b001; 
+				auxAluOp <= 3'b101; 
 				auxMemRead <= 0;
 				auxMemWrite <= 0;
 				auxMemtoReg <= 0;
 				auxALUSrc <= 1;
-				auxRegDst <= 0;
+				auxRegDst <= 1;
 				auxBEQ <= 0;
 				auxBNE <= 0;
 				auxControlJump <= 0;

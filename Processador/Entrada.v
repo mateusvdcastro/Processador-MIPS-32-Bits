@@ -43,8 +43,8 @@ module Entrada(
 		resultado =  interruptores[15:0];
 	end
 	
-//	assign novo_clock = RegClock;
-	assign novo_clock = clock;
+	assign novo_clock = RegClock;
+	//assign novo_clock = clock;
 	assign resultado_entrada = resultado;
 	
 endmodule 

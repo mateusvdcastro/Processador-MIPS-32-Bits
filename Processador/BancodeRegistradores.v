@@ -17,18 +17,24 @@ begin
 	if (First_clock == 1)
 	begin
 		// Separo os 2 últimos registradores do banco para iniciá-los com valores padrão
-		registers[31] = 32'b00000000000000000000000001111111; // Último resgistrador do banco com valor 127 para traço (-) no display
-		registers[30] = 32'b00000000000000000000000001111110; // Valor 126 para display apagado
-        registers[1] = 32'd0;
-        registers[2] = 32'd1;
+		registers[31] = 32'd0;
+		registers[1] = 32'd102;
+		registers[2] = 32'd54;
+		registers[3] = 32'd4;
+		registers[4] = 32'd10;
+
+		// registers[31] = 32'b00000000000000000000000001111111; // Último resgistrador do banco com valor 127 para traço (-) no display
+		// registers[30] = 32'b00000000000000000000000001111110; // Valor 126 para display apagado
+        // registers[1] = 32'd0;
+        // registers[2] = 32'd1;
 //		  registers[3] = 32'd2;
 //        registers[3] = 32'd10;
-        registers[4] = 32'd2;
-		  registers[0] = 32'd0;
+        // registers[4] = 32'd2;
+		// registers[0] = 32'd0;
         First_clock = 2;
 	end
 	
-	if (WriteEnable && WriteReg != 0) 
+	if (WriteEnable && WriteReg != 5'd31) 
 	begin
 		registers[WriteReg] = WriteData; // Se a escrita no registrador estiver permitida pela UC, o dado será escrito no registrador
 													  // que de endereço WriteRegRT
