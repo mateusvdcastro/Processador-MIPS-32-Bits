@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Jun 26 10:50:11 2026
+Analysis & Synthesis Status : Successful - Fri Jun 26 11:28:16 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : mips
 Top-level Entity Name : UnidadedeProcessamento
 Family : Cyclone IV E
-Total logic elements : 7,540
-    Total combinational functions : 6,705
-    Dedicated logic registers : 1,051
-Total registers : 1051
-Total pins : 47
+Total logic elements : 9,709
+    Total combinational functions : 9,690
+    Dedicated logic registers : 1,131
+Total registers : 1131
+Total pins : 77
 Total virtual pins : 206
 Total memory bits : 32,768
 Embedded Multiplier 9-bit elements : 6

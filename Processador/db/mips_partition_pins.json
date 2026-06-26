@@ -116,6 +116,118 @@
 					"strict" : false
 				},
 				{
+					"name" : "Display5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display6[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display6[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display6[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display6[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display6[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display7[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display7[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display7[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display7[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display7[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display8[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display8[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display8[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display8[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display8[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display8[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display8[6]",
+					"strict" : false
+				},
+				{
 					"name" : "led",
 					"strict" : false
 				},
@@ -840,6 +952,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
 					"name" : "Interruptores[1]",
 					"strict" : false
 				},
@@ -853,10 +969,6 @@
 				},
 				{
 					"name" : "Interruptores[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Interruptores[4]",
 					"strict" : false
 				},
 				{
@@ -876,6 +988,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "Interruptores[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Interruptores[13]",
+					"strict" : false
+				},
+				{
 					"name" : "Interruptores[15]",
 					"strict" : false
 				},
@@ -888,11 +1008,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "Interruptores[12]",
-					"strict" : false
-				},
-				{
-					"name" : "Interruptores[13]",
+					"name" : "Interruptores[10]",
 					"strict" : false
 				},
 				{
@@ -900,11 +1016,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "Interruptores[10]",
+					"name" : "Interruptores[4]",
 					"strict" : false
 				},
 				{
-					"name" : "clock",
+					"name" : "botao_enter",
+					"strict" : false
+				},
+				{
+					"name" : "botao_continue",
 					"strict" : false
 				}
 			]
